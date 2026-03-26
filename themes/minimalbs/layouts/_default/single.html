@@ -32,7 +32,7 @@
 
     <hr>
 
-    {{/* ---------------------------------------------------------
+  {{/* ---------------------------------------------------------
          NAVIGATION BAS DE PAGE
          --------------------------------------------------------- */}}
     {{ if ne .Layout "no-nav" }}
@@ -48,9 +48,11 @@
 
         <div class="home-button">
             {{ with .Parent }}
-            <a href="{{ .Parent.RelPermalink }}" class="btn btn-primary">
-                Voir tout {{ .Parent.Title }}
-            </a>
+                {{/* Ici le "." est déjà le Parent, donc on utilise ".RelPermalink" directement */}}
+                <a href="{{ .RelPermalink }}" class="btn btn-primary">
+                    Voir tout {{ .Title }}
+                </a>
+            {{ end }}
         </div>
 
         <div class="next-article">
@@ -63,7 +65,3 @@
 
     </nav>
     {{ end }}
-
-</article>
-
-{{ end }}
