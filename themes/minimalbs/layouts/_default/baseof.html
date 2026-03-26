@@ -12,9 +12,6 @@
 
     {{- partialCached "footer.html" . -}}
 
-    {{- partialCached "scroll.html" . }}
-
-    {{- $js := resources.Get "js/scroll-progress.js" | minify | fingerprint -}}
-    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+    
 </body>
 </html>
