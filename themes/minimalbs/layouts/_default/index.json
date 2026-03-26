@@ -2,8 +2,9 @@
   {{- range $index, $page := .Site.RegularPages -}}
   {{- if $index -}}, {{- end -}}
   {
+    "id": {{ $index }},
     "title": {{ $page.Title | jsonify }},
-    "permalink": {{ $page.Permalink | jsonify }},
+    "relpermalink": {{ $page.RelPermalink | jsonify }},
     "content": {{ $page.Plain | jsonify }},
     "author": {{ or $page.Params.author .Site.Params.author "Michel C" | jsonify }},
     "date": {{ .Date.Format "02/01/2006" | jsonify }},

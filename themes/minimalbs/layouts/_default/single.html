@@ -5,22 +5,6 @@
 
 <article class="container py-5">
 
-    {{/* ---------------------------------------------------------
-         BLOC NETTOYÉ INDEXABLE (accent-insensible)
-         --------------------------------------------------------- */}}
-    <div aria-hidden="true" style="position:absolute; left:-9999px; top:-9999px;">
-
-        {{/* On construit une version sans accents du titre + contenu */}}
-       {{ $clean := printf "%s %s %s" .Title .Plain .Plain | lower }}
-        {{ $clean = $clean | replaceRE "[àâä]" "a" }}
-        {{ $clean = $clean | replaceRE "[éèêë]" "e" }}
-        {{ $clean = $clean | replaceRE "[îï]" "i" }}
-        {{ $clean = $clean | replaceRE "[ôö]" "o" }}
-        {{ $clean = $clean | replaceRE "[ûùü]" "u" }}
-        {{ $clean = $clean | replaceRE "ç" "c" }}
-
-        <span>{{ $clean }}</span>
-    </div>
 
     {{/* ---------------------------------------------------------
          AFFICHAGE RÉEL
@@ -56,21 +40,22 @@
 
         <div class="prev-article">
             {{ with .NextInSection }}
-                <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-secondary">
+                <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-secondary">
                     &larr; {{ .Title | truncate 25 }}
                 </a>
             {{ end }}
         </div>
 
         <div class="home-button">
-            <a href="{{ .Parent.Permalink }}" class="btn btn-primary">
+            {{ with .Parent }}
+            <a href="{{ .Parent.RelPermalink }}" class="btn btn-primary">
                 Voir tout {{ .Parent.Title }}
             </a>
         </div>
 
         <div class="next-article">
             {{ with .PrevInSection }}
-                <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-secondary">
+                <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-secondary">
                     {{ .Title | truncate 25 }} &rarr;
                 </a>
             {{ end }}
