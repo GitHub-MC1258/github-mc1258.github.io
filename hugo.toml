@@ -1,4 +1,4 @@
-baseURL = "https://github.com/GitHub-MC1258/gitsite4mc.git"
+baseURL = "https://github.com/GitHub-MC1258/gitsite4mc.git/"
 languageCode = "fr-FR"
 title = "Mon p'tit site"
 theme = "minimalbs"
@@ -6,7 +6,7 @@ timeZone = "Europe/Paris"
 
 # Nettoyage et URLs
 cleanDestinationDir = true
-relativeURLs = false
+relativeURLs = true
 canonifyURLs = false
 
 [outputs]
@@ -18,7 +18,7 @@ canonifyURLs = false
 [params]
   author = "Michel C"
   description = "Mon site personnel"
-  siteUrl = "https://github.com/GitHub-MC1258/gitsite4mc.git"
+  siteUrl = "https://github.com/GitHub-MC1258/gitsite4mc.git/"
   date_format = "2 January 2006" # Format Hugo pour l'affichage
   locale = "fr_FR"
 
