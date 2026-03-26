@@ -5,7 +5,6 @@
 
 <article class="container py-5">
 
-
     {{/* ---------------------------------------------------------
          AFFICHAGE RÉEL
          --------------------------------------------------------- */}}
@@ -32,7 +31,7 @@
 
     <hr>
 
-  {{/* ---------------------------------------------------------
+    {{/* ---------------------------------------------------------
          NAVIGATION BAS DE PAGE
          --------------------------------------------------------- */}}
     {{ if ne .Layout "no-nav" }}
@@ -48,7 +47,7 @@
 
         <div class="home-button">
             {{ with .Parent }}
-                {{/* Ici le "." est déjà le Parent, donc on utilise ".RelPermalink" directement */}}
+                {{/* Le "." est ici le Parent, .RelPermalink pointe vers la section */}}
                 <a href="{{ .RelPermalink }}" class="btn btn-primary">
                     Voir tout {{ .Title }}
                 </a>
@@ -65,3 +64,7 @@
 
     </nav>
     {{ end }}
+
+</article>
+
+{{ end }}
