@@ -54,4 +54,7 @@ uglyURLs = false  # Assure-toi que c'est bien à false
     url = "activites/"
     weight = 40
 
-
+[[menu.main]]
+    name = "Contact"
+    url = "contact/"
+    weight = 50

@@ -232,9 +232,17 @@
     "rawDate": "2020-07-20"
   },{
     "id": 29,
+    "title": "",
+    "relpermalink": "/contact/",
+    "content": " \u0026lt;div class=\u0026quot;mt-4\u0026quot;\u0026gt; \u0026lt;button type=\u0026quot;submit\u0026quot; class=\u0026quot;btn w-100 justify-content-center\u0026quot;\u0026gt; Envoyer le message \u0026lt;/button\u0026gt; \u0026lt;/div\u0026gt; ",
+    "author": "Michel C",
+    "date": "01/01/0001",
+    "rawDate": "0001-01-01"
+  },{
+    "id": 30,
     "title": "Mentions Légales",
     "relpermalink": "/mentions-legales/",
-    "content": "Éditeur du site Le site 6te4mc.ct.ws est édité par : Michel Contact : via le formulaire\nHébergement Le site est hébergé par : ** InfinityFree**\nVie privée et Données personnelles Ce site s\u0026rsquo;inscrit dans une démarche de sobriété numérique et de respect de la vie privée :\nZéro Cookie de suivi : Nous n\u0026rsquo;utilisons aucun cookie publicitaire, statistique ou tiers. Un seul cookie technique de sécurité (__test) peut être déposé par l\u0026rsquo;hébergeur pour la protection contre les robots. Formulaire de contact : Les données saisies (Nom, Email, Message) sont transmises directement par email via une connexion sécurisée. Elles ne sont pas stockées en base de données et ne sont jamais cédées à des tiers. Elles servent uniquement à répondre à votre demande. Droits : Conformément au RGPD, vous disposez d\u0026rsquo;un droit d\u0026rsquo;accès et de suppression de vos données en nous contactant directement. Propriété intellectuelle Le contenu du site est sous licence CC BY-NC-ND.\n",
+    "content": "Éditeur du site Le site github-mc1258.github.io est édité par : Michel Contact : via le formulaire\nHébergement Le site est hébergé sur : ** GitHub pages**\nVie privée et Données personnelles Ce site s\u0026rsquo;inscrit dans une démarche de sobriété numérique et de respect de la vie privée :\nZéro Cookie de suivi : Nous n\u0026rsquo;utilisons aucun cookie publicitaire, statistique ou tiers. Un seul cookie technique de sécurité (__test) peut être déposé par l\u0026rsquo;hébergeur pour la protection contre les robots. Formulaire de contact : Les données saisies (Nom, Email, Message) sont transmises directement par email via une connexion sécurisée. Elles ne sont pas stockées en base de données et ne sont jamais cédées à des tiers. Elles servent uniquement à répondre à votre demande. Droits : Conformément au RGPD, vous disposez d\u0026rsquo;un droit d\u0026rsquo;accès et de suppression de vos données en nous contactant directement. Propriété intellectuelle Le contenu du site est sous licence CC BY-NC-ND.\n",
     "author": "Michel C",
     "date": "01/01/0001",
     "rawDate": "0001-01-01"
