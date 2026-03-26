@@ -1,0 +1,13 @@
+[
+  {{- range $index, $page := .Site.RegularPages -}}
+  {{- if $index -}}, {{- end -}}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "permalink": {{ $page.Permalink | jsonify }},
+    "content": {{ $page.Plain | jsonify }},
+    "author": {{ or $page.Params.author .Site.Params.author "Michel C" | jsonify }},
+    "date": {{ .Date.Format "02/01/2006" | jsonify }},
+    "rawDate": {{ .Date.Format "2006-01-02" | jsonify }}
+  }
+  {{- end -}}
+]

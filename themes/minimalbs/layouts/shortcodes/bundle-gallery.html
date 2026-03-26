@@ -1,0 +1,31 @@
+<div class="pswp-gallery row" id="gallery-{{ .Ordinal }}">
+  {{ $captions := dict }}
+  {{ with .Page.Resources.GetMatch .Page.Params.captions }}
+    {{ $captions = . | transform.Unmarshal }}
+  {{ end }}
+
+  {{ range .Page.Resources.ByType "image" }}
+    {{ $thumbnail := .Fill "400x300" }}
+    {{ $caption := index $captions .Name }}
+
+    <div class="col-6 col-md-4 mb-4"> {{/* Augmenté mb-3 à mb-4 pour respirer */}}
+      <a href="{{ .RelPermalink }}"
+         data-pswp-width="{{ .Width }}"
+         data-pswp-height="{{ .Height }}"
+         data-caption="{{ $caption | default "" }}" {{/* Vide si pas de légende */}}
+         target="_blank"
+         class="text-decoration-none"> {{/* Empêche le soulignement Bootstrap */}}
+
+         <img src="{{ $thumbnail.RelPermalink }}"
+              alt="{{ $caption | default .Name }}"
+              class="img-fluid rounded shadow-sm" /> {{/* Ajout d'une ombre légère */}}
+
+         {{ if $caption }}
+           <div class="gallery-caption mt-2 text-center">
+             {{ $caption }}
+           </div>
+         {{ end }}
+      </a>
+    </div>
+  {{ end }}
+</div>

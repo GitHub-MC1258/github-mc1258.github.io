@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<section class="home-intro py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10 text-center">
+
+      <h1 class="display-4 mb-4" style="color: #9400D3; font-weight: bold;">
+        {{ .Title }}
+      </h1>
+<!-- on appelle le partial 'home-nav.html' -->
+      {{ .Content }} {{ partial "home-nav.html" . }}
+
+      <div class="lead mb-5">
+        {{ .Content }}
+      </div>
+
+
+      {{ if .Site.RegularPages }}
+      <div class="mt-5 pt-4 border-top">
+        <p class="small text-uppercase mb-4" style="letter-spacing: 2px; color: var(--primary-gray); font-weight: bold;">
+          Dernières publications
+        </p>
+
+        <div class="latest-posts-list">
+          {{ range first 3 (sort .Site.RegularPages "Date" "desc") }}
+          <div class="mb-3">
+            <article class="d-flex justify-content-center align-items-baseline">
+
+              <h2 class="h5 mb-0">
+                <a href="{{ .RelPermalink }}" class="article-title-link">
+                  {{ .Title }}
+                </a>
+              </h2>
+
+              <span class="ms-2 text-muted small" style="opacity: 0.7; white-space: nowrap;">
+                — {{ .Date.Format "02/01/2006" }}
+              </span>
+
+            </article>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

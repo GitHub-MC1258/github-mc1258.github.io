@@ -1,0 +1,14 @@
+<div class="annee-card">
+    <a href="{{ .RelPermalink }}">
+        {{/* On cherche un fichier image qui commence par 'calendrier' dans le dossier */}}
+        {{ $image := .Resources.GetMatch "calendrier*" }}
+
+        {{ with $image }}
+            {{/* Si l'image existe, on l'affiche */}}
+            <img src="{{ .RelPermalink }}" alt="Calendrier">
+        {{ else }}
+            {{/* Image de secours si vous oubliez de mettre le JPG */}}
+            <img src="/img/default.jpg" alt="Image manquante">
+        {{ end }}
+    </a>
+</div>

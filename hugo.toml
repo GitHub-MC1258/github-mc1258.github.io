@@ -1,0 +1,56 @@
+baseURL = "https://github.com/GitHub-MC1258/gitsite4mc.git"
+languageCode = "fr-FR"
+title = "Mon p'tit site"
+theme = "minimalbs"
+timeZone = "Europe/Paris"
+
+# Nettoyage et URLs
+cleanDestinationDir = true
+relativeURLs = false
+canonifyURLs = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+  pagerSize = 5
+
+[params]
+  author = "Michel C"
+  description = "Mon site personnel"
+  siteUrl = "https://github.com/GitHub-MC1258/gitsite4mc.git"
+  date_format = "2 January 2006" # Format Hugo pour l'affichage
+  locale = "fr_FR"
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+    respectDoNotTrack = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Nécessaire pour le HTML dans le Markdown
+
+# Menus
+[[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 10
+
+[[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    weight = 20
+
+[[menu.main]]
+    name = "Voyages"
+    url = "/voyages/"
+    weight = 30
+
+[[menu.main]]
+    name = "Activités"
+    url = "/activites/"
+    weight = 40
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {{- partial "head.html" . -}}
+</head>
+<body class="container py-4">
+    {{- partial "header.html" . -}}
+
+    <main>
+        {{- block "main" . }}{{ end -}}
+    </main>
+
+    {{- partialCached "footer.html" . -}}
+
+    {{- partialCached "scroll.html" . }}
+
+    {{- $js := resources.Get "js/scroll-progress.js" | minify | fingerprint -}}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+</html>

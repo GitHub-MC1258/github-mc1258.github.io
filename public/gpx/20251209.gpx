@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="OruxMaps v.10.7.4 GP" version="1.1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<!-- owner: a9eb7f1c0ecab4 -->
+<metadata>
+<name><![CDATA[2025-12-09 08:51:34]]></name>
+<link href="https://www.oruxmaps.com">
+<text>OruxMaps GP</text>
+</link>
+<time>2025-12-09T07:51:34.166Z</time><bounds maxlat="45.5634800" maxlon="5.9451550" minlat="45.5634800" minlon="5.9451550"/>
+</metadata>
+<wpt lat="45.5634800" lon="5.9451550">
+<ele>295.04</ele>
+<time>2025-12-09T07:51:34.580Z</time>
+<name><![CDATA[]]></name>
+<sym>Waypoint</sym>
+<type>Point de départ</type>
+<extensions>
+<om:oruxmapsextensions>
+<om:ext type="ICON" subtype="0">38</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<wpt lat="45.5634800" lon="5.9451550">
+<ele>295.04</ele>
+<time>2025-12-09T07:52:43.062Z</time>
+<name><![CDATA[]]></name>
+<desc><![CDATA[<p><br /><h3>Nom: Segment: 1</h3><br />Type: Indéfini<br/>Heure de départ: 08:51 9 déc. 2025<br/>Heure d'arrivée: 08:51 9 déc. 2025<br/>Distance: 0,0km (00:00)<br/>Temps déplacement: 00:00<br/>Vitesse moyenne: 0,00 km/h<br/>Vitesse en mouvement: 0,00 km/h<br/>Vitesse Max.: 0,00 km/h<br/>Altitude minimale: 295 m<br/>Altitude maximale: 295 m<br/>Dénivelé positif: 0 m<br/>Dénivelé négatif: 0 m<br/>Temps de montée: 00:00<br/>Temps de descente: 00:00<br/></p>]]></desc>
+<sym>Waypoint</sym>
+<type>Point d'arrivée</type>
+<extensions>
+<om:oruxmapsextensions>
+<om:ext type="ICON" subtype="0">15</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</wpt>
+<trk>
+<name><![CDATA[2025-12-09 08:51:34]]></name>
+<desc><![CDATA[<p>Type: Indéfini<br/>Heure de départ: 08:51 9 déc. 2025<br/>Heure d'arrivée: 08:51 9 déc. 2025<br/>Distance: 0,0 km (00:00)<br/>Altitude minimale: 295 m<br/>Altitude maximale: 295 m<br/>Pulsation min: 80<br/>Pulsation max: 80<br/>Pulsation moy: 80<br/>Calories: 0<br/></p><hr align="center" width="480" style="height: 2px; width: 517px"/>]]></desc>
+<type>Indéfini</type>
+<extensions>
+<om:oruxmapsextensions>
+<om:ext type="TYPE" subtype="0">0</om:ext>
+<om:ext type="DIFFICULTY">0</om:ext>
+</om:oruxmapsextensions>
+</extensions>
+<trkseg>
+<trkpt lat="45.5634800" lon="5.9451550">
+<ele>295.04</ele>
+<time>2025-12-09T07:51:35.000Z</time>
+<extensions>
+<gpxtpx:TrackPointExtension>
+<gpxtpx:hr>80</gpxtpx:hr>
+</gpxtpx:TrackPointExtension>
+</extensions>
+</trkpt>
+<extensions>
+<om:oruxmapsextensions>
+<om:ext type="NAME" subtype="0"><![CDATA[Segment: 1]]></om:ext>
+</om:oruxmapsextensions>
+</extensions>
+</trkseg>
+</trk>
+</gpx>

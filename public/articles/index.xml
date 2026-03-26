@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Mon p&#39;tit site</title>
+    <link>http://localhost:1313/articles/</link>
+    <description>Recent content in Articles on Mon p&#39;tit site</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Sun, 25 Jan 2026 00:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mon premier article</title>
+      <link>http://localhost:1313/articles/art-1/</link>
+      <pubDate>Thu, 22 Jan 2026 17:25:28 +0100</pubDate>
+      <guid>http://localhost:1313/articles/art-1/</guid>
+      <description>&lt;p&gt;Ceci est le contenu&lt;br&gt;&#xA;Ceci est le premier article, dont le weight est 30.&lt;/p&gt;&#xA;&lt;p&gt;Je rajoute Maïa, maïa, Maia_1 pour test de la recherche&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Article no 2</title>
+      <link>http://localhost:1313/articles/art-2/</link>
+      <pubDate>Thu, 22 Jan 2026 10:30:36 +0100</pubDate>
+      <guid>http://localhost:1313/articles/art-2/</guid>
+      <description>&lt;h1 id=&#34;bienvenue-sur-mon-deuxième-article-avec-hugo&#34;&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;weight = 40&lt;/u&gt;&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet. In numquam facere est dicta voluptas id consequatur soluta sit esse consectetur 33 voluptatem voluptatem. Ab harum illum quo reprehenderit reiciendis qui provident quidem et temporibus numquam qui nobis debitis et ducimus nemo non saepe amet.&lt;/p&gt;&#xA;&lt;p&gt;Vel nesciunt esse et adipisci quia qui enim eius et similique deleniti sit quos accusamus qui consequatur explicabo. Aut quod nihil qui iure dolores non error ipsum qui autem aspernatur et atque alias et dicta facilis non galisum delectus. Sed nesciunt voluptas est commodi impedit aut facere dolores ut voluptatum itaque hic cumque nihil aut necessitatibus cupiditate sed voluptas commodi. Ut quia asperiores et culpa optio non officiis aperiam aut quasi harum et sunt veritatis et nobis alias aut fugit minima.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test galerie photo-9</title>
+      <link>http://localhost:1313/articles/art-9/</link>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/articles/art-9/</guid>
+      <description>&lt;div class=&#34;pswp-gallery row&#34; id=&#34;gallery-0&#34;&gt;&#xA;  &#xA;  &#xA;    &#xA;  &#xA;&#xA;  &#xA;    &#xA;    &#xA;&#xA;    &lt;div class=&#34;col-6 col-md-4 mb-4&#34;&gt; &#xA;      &lt;a href=&#34;http://localhost:1313/articles/art-9/Avatar.jpg&#34;&#xA;         data-pswp-width=&#34;2668&#34;&#xA;         data-pswp-height=&#34;2668&#34;&#xA;         data-caption=&#34;Mon Avatar&#34; &#xA;         target=&#34;_blank&#34;&#xA;         class=&#34;text-decoration-none&#34;&gt; &#xA;&#xA;         &lt;img src=&#34;http://localhost:1313/articles/art-9/Avatar_hu_5e7c295a82ae257.jpg&#34;&#xA;              alt=&#34;Mon Avatar&#34;&#xA;              class=&#34;img-fluid rounded shadow-sm&#34; /&gt; &#xA;&#xA;         &#xA;           &lt;div class=&#34;gallery-caption mt-2 text-center&#34;&gt;&#xA;             Mon Avatar&#xA;           &lt;/div&gt;&#xA;         &#xA;      &lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &#xA;    &#xA;    &#xA;&#xA;    &lt;div class=&#34;col-6 col-md-4 mb-4&#34;&gt; &#xA;      &lt;a href=&#34;http://localhost:1313/articles/art-9/photo_1.jpg&#34;&#xA;         data-pswp-width=&#34;510&#34;&#xA;         data-pswp-height=&#34;287&#34;&#xA;         data-caption=&#34;Mon beau vélo Rewel&#34; &#xA;         target=&#34;_blank&#34;&#xA;         class=&#34;text-decoration-none&#34;&gt; &#xA;&#xA;         &lt;img src=&#34;http://localhost:1313/articles/art-9/photo_1_hu_ddd1133d56ad7235.jpg&#34;&#xA;              alt=&#34;Mon beau vélo Rewel&#34;&#xA;              class=&#34;img-fluid rounded shadow-sm&#34; /&gt; &#xA;&#xA;         &#xA;           &lt;div class=&#34;gallery-caption mt-2 text-center&#34;&gt;&#xA;             Mon beau vélo Rewel&#xA;           &lt;/div&gt;&#xA;         &#xA;      &lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Voici une galerie photo avec &lt;em&gt;PhotoSwipe&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;&#xA;&lt;p&gt;On souligne : &lt;u&gt;le weight est 60.&lt;/u&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;et maintenant le texte en gras !&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

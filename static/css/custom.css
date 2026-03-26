@@ -1,0 +1,39 @@
+.float-left {
+  float: left;
+  shape-outside: margin-box;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.post-navigation a {
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
+}
+.post-nav-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-btn {
+  background: #333;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: #555;
+}
+
+.prev-btn::before,
+.next-btn::after {
+  font-weight: bold;
+}
+.post-nav-buttons a
+  { border-radius: 4px; /* identique à Ananke */ }
+ .nav-separator
+  { font-size: 1.6rem;
+      opacity: 0.6; }
