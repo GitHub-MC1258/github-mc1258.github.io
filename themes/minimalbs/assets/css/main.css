@@ -451,3 +451,16 @@ mark {
     /* Optionnel : un léger effet d'accentuation */
     transform: translateY(-2px) scale(1.1);
 }
+/* Personnalisation du message de retour */
+#response-msg.text-success {
+    color: #2ecc71 !important; /* Un beau vert émeraude */
+    font-weight: 500;
+    background-color: rgba(46, 204, 113, 0.1); /* Optionnel : léger fond vert */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#response-msg.text-danger {
+    color: #e74c3c !important; /* Un rouge plus vif */
+}
+.contact-success-msg { color: var(--signature-violet); }

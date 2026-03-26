@@ -19,12 +19,15 @@ if (contactForm) {
                 body: JSON.stringify(data)
             });
 
-            if (response.ok) {
-                msgDiv.innerHTML = "<span style='color: green;'>Message envoyé avec succès !</span>";
-                contactForm.reset();
-            } else {
-                msgDiv.innerHTML = "<span style='color: red;'>Erreur lors de l'envoi via le Worker.</span>";
-            }
+           if (response.ok) {
+    // MODIFIE LE TEXTE ICI
+    responseMsg.textContent = "Merci pour votre message, nous vous répondrons au plus tôt.";
+   responseMsg.className = "contact-success-msg";
+    contactForm.reset();
+} else {
+    responseMsg.textContent = "Erreur lors de l'envoi. Réessayez plus tard.";
+    responseMsg.className = "text-danger small mt-3 text-center";
+}
         } catch (error) {
             msgDiv.innerHTML = "<span style='color: red;'>Impossible de joindre le serveur.</span>";
         }
