@@ -1,4 +1,4 @@
-baseURL = "https://github-mc1258.github.io/gitsite4mc/"
+baseURL = "https://github-mc1258.github.io/"
 languageCode = "fr-FR"
 title = "Mon p'tit site"
 theme = "minimalbs"
@@ -19,7 +19,7 @@ uglyURLs = false  # Assure-toi que c'est bien à false
 [params]
   author = "Michel C"
   description = "Mon site personnel"
-  siteUrl = "https://github-mc1258.github.io/gitsite4mc/"
+  siteUrl = "https://github-mc1258.github.io/"
   date_format = "2 January 2006" # Format Hugo pour l'affichage
   locale = "fr_FR"
 
@@ -41,17 +41,17 @@ uglyURLs = false  # Assure-toi que c'est bien à false
 
 [[menu.main]]
     name = "Articles"
-    url = "/articles/"
+    url = "articles/"
     weight = 20
 
 [[menu.main]]
     name = "Voyages"
-    url = "/voyages/"
+    url = "voyages/"
     weight = 30
 
 [[menu.main]]
     name = "Activités"
-    url = "/activites/"
+    url = "activites/"
     weight = 40
 
 
