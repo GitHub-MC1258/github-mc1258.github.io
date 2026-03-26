@@ -5,12 +5,12 @@ searchable: false
 ---
 
 ### Éditeur du site
-Le site **6te4mc.ct.ws** est édité par :
+Le site **github-mc1258.github.io** est édité par :
 **Michel** Contact : via le formulaire
 
 ### Hébergement
-Le site est hébergé par :
-** InfinityFree**
+Le site est hébergé sur :
+** GitHub pages**
 
 ### Vie privée et Données personnelles
 Ce site s'inscrit dans une démarche de sobriété numérique et de respect de la vie privée :
