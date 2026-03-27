@@ -5,8 +5,19 @@
     const resultsContainer = document.getElementById('search-page-results');
     const termSpan = document.getElementById('search-query-term');
 
+    // 1. On définit la fonction de normalisation en dehors
+    const suggest = function(str) {
+        if (!str) return "";
+    return str.normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .toLowerCase()
+              .trim();
+    };
+
+
     // On initialise FlexSearch comme avant...
     const index = new FlexSearch.Document({
+        encode: suggest, // FlexSearch appliquera suggest() à chaque mot
         document: { id: "id", index: ["title", "content", "author"], store: ["title", "relpermalink", "date", "author", "content"] },
         tokenize: "forward"
     });
