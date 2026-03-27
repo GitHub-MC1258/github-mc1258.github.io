@@ -31,7 +31,7 @@ if (contactForm) {
             });
 
             if (response.ok) {
-                msgDiv.textContent = "Merci pour votre message, nous vous répondrons au plus tôt.";
+                msgDiv.textContent = "Merci pour votre message.";
                 msgDiv.className = "contact-success-msg";
                 if (submitBtn) submitBtn.classList.add('hidden');
                 contactForm.reset();
