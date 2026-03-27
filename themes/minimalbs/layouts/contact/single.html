@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="post">
+  <header>
+    <h1 class="navbar-brand">{{ .Title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+
+    <div class="contact-form">
+        <form id="contact-form">
+            <div style="display:none;">
+                <label>Ne pas remplir ce champ :</label>
+                <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+            </div>
+
+            <input type="text" id="name" placeholder="Nom" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+
+            <div class="text-center">
+                <button type="submit" class="btn">Envoyer le message</button>
+            </div>
+        </form>
+        <div id="response-msg"></div>
+    </div>
+  </div>
+
+  <div class="navigation-footer" style="justify-content: center; margin-top: 2rem;">
+      <a href="/" class="btn">
+          <span style="margin-right: 8px;">🏠</span> Retour à l'accueil
+      </a>
+  </div>
+</article>
+{{ end }}
