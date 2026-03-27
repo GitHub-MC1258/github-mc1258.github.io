@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # On force le passage à Node 24 comme demandé
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,8 +27,21 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Cache Hugo resources
+        uses: actions/cache@v4
+        with:
+          path: /tmp/hugo_cache
+          # On utilise config.toml comme clé de hash car c'est lui qui définit les ressources
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/config.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+
       - name: Build
-        run: hugo --minify
+        # On utilise une seule commande Build avec le répertoire de cache
+        run: hugo --minify --cacheDir /tmp/hugo_cache
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -40,7 +53,6 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
