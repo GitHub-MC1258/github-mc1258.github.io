@@ -8,7 +8,7 @@ timeZone = "Europe/Paris"
 cleanDestinationDir = true
 relativeURLs = true
 canonifyURLs = false
-uglyURLs = false  # Assure-toi que c'est bien à false
+uglyURLs = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="container my-5">
+    <h1 class="mb-4">Résultats pour : <span id="search-query-term" class="text-primary"></span></h1>
+
+    <div class="row mb-5">
+        <div class="col-md-8">
+            <input type="text" id="search-page-input" class="form-control form-control-lg" placeholder="Affiner votre recherche...">
+        </div>
+    </div>
+
+    <div id="search-page-results" class="row g-4">
+        </div>
+
+    <div id="no-results-message" class="d-none text-center py-5">
+        <p class="lead text-muted">Désolé, nous n'avons rien trouvé pour cette requête.</p>
+        <a href="/" class="btn btn-outline-primary">Retour à l'accueil</a>
+    </div>
+</div>
+{{ end }}

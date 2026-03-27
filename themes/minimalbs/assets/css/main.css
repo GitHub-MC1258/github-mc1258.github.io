@@ -480,3 +480,13 @@ mark {
 .hidden {
     display: none !important;
 }
+/*affichage résultats */
+#search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: white;
+}
