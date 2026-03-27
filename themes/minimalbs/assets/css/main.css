@@ -451,3 +451,32 @@ mark {
     /* Optionnel : un léger effet d'accentuation */
     transform: translateY(-2px) scale(1.1);
 }
+/* ==========================================================================
+   11. Retours du Formulaire Contact
+   ========================================================================== */
+   /* Styles pour les messages de retour du formulaire */
+.contact-success-msg {
+    color: var(--signature-violet);
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--signature-violet);
+    border-radius: var(--btn-radius);
+    background-color: #fdf0ff; /* Un violet très léger pour le fond */
+    margin-top: 1rem;
+}
+
+.contact-error-msg {
+    color: #d9534f; /* Un rouge standard pour l'erreur */
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #d9534f;
+    border-radius: var(--btn-radius);
+    margin-top: 1rem;
+}
+
+/* Classe utilitaire pour masquer le bouton */
+.hidden {
+    display: none !important;
+}

@@ -4,10 +4,12 @@ if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // On récupère l'élément de réponse
         const msgDiv = document.getElementById('response-msg');
+        // On cible le bouton à l'intérieur du formulaire
+        const submitBtn = contactForm.querySelector('button');
+
         msgDiv.innerText = "Envoi en cours...";
-        msgDiv.className = ""; // Réinitialise les classes si besoin
+        msgDiv.className = "text-muted small mt-3 text-center";
 
         const data = {
             name: document.getElementById('name').value,
@@ -23,17 +25,23 @@ if (contactForm) {
             });
 
             if (response.ok) {
-                // Utilisation de msgDiv (et non responseMsg)
+                // SUCCESS
                 msgDiv.textContent = "Merci pour votre message, nous vous répondrons au plus tôt.";
                 msgDiv.className = "contact-success-msg";
+
+                // On cache le bouton d'envoi
+                if (submitBtn) submitBtn.classList.add('hidden');
+
                 contactForm.reset();
             } else {
+                // ERROR SERVEUR (ex: 500)
                 msgDiv.textContent = "Erreur lors de l'envoi. Réessayez plus tard.";
-                msgDiv.className = "text-danger small mt-3 text-center";
+                msgDiv.className = "contact-error-msg";
             }
         } catch (error) {
-            console.error("Erreur Fetch:", error);
-            msgDiv.innerHTML = "<span style='color: red;'>Impossible de joindre le serveur.</span>";
+            // ERROR RESEAU
+            msgDiv.textContent = "Impossible de joindre le serveur.";
+            msgDiv.className = "contact-error-msg";
         }
     });
 }
