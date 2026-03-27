@@ -6,7 +6,8 @@ draft: false
 image: "bryce-canyon.jpg"
 ---
 
-{{< img-left src="bryce-canyon.jpg" alt="Bryce Canyon" >}}Ceci est le contenu  
+{{< img-left src="bryce-canyon.jpg" alt="Bryce Canyon" >}}
+Ceci est le contenu  
 Ceci est le premier article, dont le weight est 30.  
 
 Je rajoute Maïa, maïa, Maia_1 pour test de la recherche
