@@ -35,7 +35,7 @@ jobs:
         with:
           path: /tmp/hugo_cache
           # On utilise config.toml comme clé de hash car c'est lui qui définit les ressources
-          key: ${{ runner.os }}-hugo-${{ hashFiles('**/config.toml') }}
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/hugo.toml') }}
           restore-keys: |
             ${{ runner.os }}-hugo-
 

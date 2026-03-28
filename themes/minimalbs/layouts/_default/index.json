@@ -1,15 +1,6 @@
-[
- {{- $pages := where .Site.RegularPages "Params.searchable" "!=" false -}}
-  {{- range $index, $page := $pages -}}
-  {{- if $index -}},{{- end -}}
-  {
-    "id": {{ $index }},
-    "title": {{ $page.Title | jsonify }},
-    "relpermalink": {{ $page.RelPermalink | jsonify }},
-    "content": {{ $page.Plain | jsonify }},
-    "author": {{ or $page.Params.author .Site.Params.author "Michel C" | jsonify }},
-    "date": {{ .Date.Format "02/01/2006" | jsonify }},
-    "rawDate": {{ .Date.Format "2006-01-02" | jsonify }}
-  }
-  {{- end -}}
-]
+{{- $.Scratch.Add "index" slice -}}
+{{- /* On filtre ici pour exclure les pages où searchable est explicitement false */ -}}
+{{- range (where .Site.RegularPages "Params.searchable" "!=" false) -}}
+    {{- $.Scratch.Add "index" (dict "title" .Title "author" ( .Params.author | default .Site.Params.author ) "content" (.Plain | htmlUnescape | plainify) "permalink" .Permalink) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

@@ -490,3 +490,105 @@ mark {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     background: white;
 }
+/* ==========================================================================
+   12. STYLES SPECIFIQUES FUSE.JS (Adaptation MinimalBS)
+   ========================================================================== */
+
+/* On ajuste le wrapper pour que la liste soit relative à la barre de recherche */
+.search-wrapper {
+    position: relative; /* Indispensable pour le "position: absolute" du menu */
+}
+
+#search-results {
+    position: absolute;
+    top: 100%; /* Juste en dessous de l'input */
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    background: #ffffff; /* Indispensable pour ne pas voir le texte du site par transparence */
+    border: 1px solid var(--signature-violet);
+    border-radius: var(--btn-radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-height: 300px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+/* On cache la liste si elle est vide pour éviter un petit carré blanc vide */
+#search-results:empty {
+    display: none;
+}
+
+/* Chaque ligne de résultat */
+.search-result-item {
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background-color: var(--light-gray);
+}
+
+/* Le lien à l'intérieur du résultat */
+.search-result-item a {
+    display: block;
+    padding: 12px 15px;
+    color: var(--dark-gray);
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+.search-result-item a:hover {
+    color: var(--signature-violet);
+}
+
+/* Style pour mettre en gras le mot trouvé (si tu actives includeMatches) */
+.search-result-item mark {
+    background-color: var(--signature-violet);
+    color: white;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+/* Style pour le surlignage dans la page de recherche */
+mark {
+    background-color: var(--signature-violet);
+    color: white;
+    padding: 0 3px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.search-result-big {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.search-result-big h3 a {
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+}
+
+.search-result-big .author {
+    font-size: 0.85rem;
+    color: var(--primary-gray);
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.search-result-big .excerpt {
+    color: #444;
+    font-size: 0.95rem;
+}
+mark {
+    background-color: var(--signature-violet);
+    color: white;
+    padding: 0 2px;
+    border-radius: 3px;
+}

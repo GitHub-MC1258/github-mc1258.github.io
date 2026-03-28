@@ -10,4 +10,5 @@ image: "bryce-canyon.jpg"
 Ceci est le contenu  
 Ceci est le premier article, dont le weight est 30.  
 
-Je rajoute Maïa, maïa, Maia_1 pour test de la recherche
+Je rajoute Maïa, maïa, Maia_1 pour test de la recherche  
+En même temps, je rajoute françoise et garçon.  

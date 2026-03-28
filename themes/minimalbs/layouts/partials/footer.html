@@ -19,17 +19,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-{{ $contact := resources.Get "js/contact.js" | minify | fingerprint }}
-<script src="{{ $contact.RelPermalink }}" defer></script>
-
-<!-- appel flexsearch & search -->
-{{ $flexSrc := resources.Get "js/flexsearch.bundle.js" | minify | fingerprint }}
-<script src="{{ $flexSrc.RelPermalink }}" integrity="{{ $flexSrc.Data.Integrity }}" defer></script>
-
-{{ $searchSrc := resources.Get "js/search.js" | minify | fingerprint }}
-<script src="{{ $searchSrc.RelPermalink }}" integrity="{{ $searchSrc.Data.Integrity }}" defer></script>
-
-
 <script type="module">
   import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
   import PhotoSwipe from 'https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js';
