@@ -2,37 +2,20 @@
   <nav class="navbar navbar-expand-lg mb-5">
     <div class="container-fluid p-0">
       <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
             <li class="nav-item">
-              {{ $is_active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-              {{ if eq $currentPage.RelPermalink .URL }}{{ $is_active = true }}{{ end }}
-              <a href="{{ .URL | relURL }}" class="nav-link {{ if $is_active }}active{{ end }}">
-                {{ .Name }}
-              </a>
+              <a href="{{ .URL | relURL }}" class="nav-link">{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>
+
       </div>
     </div>
   </nav>
-
-  <div class="search-wrapper">
-    <div style="position: relative; width: 250px;">
-      <form action="{{ "search/" | relURL }}" method="get">
-        <input type="text"
-               name="q"
-               id="search-input"
-               placeholder="Chercher Maïa..."
-               autocomplete="off">
-      </form>
-    </div>
-  </div>
 </header>

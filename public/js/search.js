@@ -1,127 +1,141 @@
 let fuse;
 
 /**
- * Initialisation de la recherche : chargement de l'index JSON et configuration de Fuse.js
+ * Initialisation de la recherche
  */
 async function initSearch() {
+    console.log("Moteur de recherche : Initialisation lancée...");
+
+    const searchInput = document.getElementById('search-input-page') || document.getElementById('search-input');
+    const container = document.getElementById('search-results');
+    const clearBtn = document.getElementById('clear-search');
+
+    if (!searchInput || !container) {
+        console.warn("Composants de recherche non trouvés sur cette page.");
+        return;
+    }
+
     try {
         const response = await fetch('/index.json');
-        if (!response.ok) throw new Error("Impossible de charger index.json");
-
+        if (!response.ok) throw new Error("Impossible de charger l'index.json");
         const data = await response.json();
 
         const options = {
             keys: [
                 { name: 'title', weight: 0.8 },
                 { name: 'author', weight: 0.6 },
-                { name: 'content', weight: 0.3 }
+                { name: 'content', weight: 0.4 }
             ],
-            threshold: 0.3,           // Équilibre entre précision et tolérance aux typos
-            minMatchCharLength: 3,    // Évite de surligner des lettres isolées
-            findAllMatches: false,
-            includeMatches: true,     // Indispensable pour le surlignage
+            threshold: 0.3,
+            minMatchCharLength: 3,
+            includeMatches: true,
             ignoreLocation: true
         };
 
         fuse = new Fuse(data, options);
-        console.log("Moteur de recherche Fuse.js prêt.");
 
-        // Gestion du paramètre URL ?q=... (provenant du header)
+        // 1. Gestion de la requête via l'URL (ex: ?q=hugo)
         const urlParams = new URLSearchParams(window.location.search);
-        const query = urlParams.get('q');
-        if (query) {
-            const inputPage = document.getElementById('search-page-input');
-            if (inputPage) inputPage.value = query;
-            executeSearch(query);
+        const queryFromUrl = urlParams.get('q');
+
+        if (queryFromUrl) {
+            searchInput.value = queryFromUrl;
+            if (clearBtn) clearBtn.style.display = 'block';
+            executeSearch(queryFromUrl);
         }
+
+        // 2. Écouteur unique sur la saisie
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value;
+
+            // On gère la croix seulement si elle existe dans le HTML
+            if (clearBtn) {
+                clearBtn.style.display = query.length > 0 ? 'block' : 'none';
+            }
+
+            executeSearch(query);
+        });
+
+        // 3. Action du clic sur la croix (si elle existe)
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => {
+                searchInput.value = "";
+                clearBtn.style.display = 'none';
+                executeSearch(""); // Vide les résultats
+                searchInput.focus();
+            });
+        }
+
     } catch (err) {
         console.error("Erreur d'initialisation :", err);
     }
 }
 
 /**
- * Exécute la recherche et affiche les résultats dans le conteneur dédié
+ * Exécute la recherche et affiche les résultats
  */
 function executeSearch(query) {
-    const container = document.getElementById('search-page-results');
-    if (!container) return;
+    const container = document.getElementById('search-results');
+    if (!container || !fuse) return;
 
-    if (!query || query.length < 2) {
+    if (!query || query.trim().length < 3) {
         container.innerHTML = "";
-        return;
-    }
-
-    if (!fuse) {
-        container.innerHTML = "<p>Chargement du moteur de recherche...</p>";
         return;
     }
 
     const results = fuse.search(query);
 
     if (results.length === 0) {
-        container.innerHTML = "<p>Aucun résultat trouvé pour cette recherche.</p>";
+        container.innerHTML = `<p class="mt-4" style="color: var(--primary-gray);">Aucun résultat trouvé pour "<strong>${query}</strong>".</p>`;
         return;
     }
 
-    container.innerHTML = results.map(result => {
-        // On récupère les valeurs de base
-        let title = result.item.title;
-        let author = result.item.author || "Anonyme";
-        let content = result.item.content.substring(0, 250) + "...";
+    const countText = results.length > 1 ? `${results.length} articles trouvés` : `${results.length} article trouvé`;
+    const countHTML = `<p style="color: var(--primary-gray); font-weight: 600; margin-bottom: 2rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                        ${countText}
+                      </p>`;
 
-        // On applique le surlignage via les correspondances trouvées par Fuse
+    const resultsHTML = results.map(result => {
+        let { title, author, content, permalink } = result.item;
+        author = author || "Michel C";
+
         result.matches.forEach(match => {
             if (match.key === 'title') title = highlight(match.value, match.indices);
             if (match.key === 'author') author = highlight(match.value, match.indices);
-            if (match.key === 'content') content = highlight(match.value, match.indices);
+            if (match.key === 'content') {
+                content = highlight(match.value.substring(0, 250), match.indices);
+            }
         });
 
         return `
-            <article class="search-result-big" style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
-                <h3 style="margin-bottom: 5px;">
-                    <a href="${result.item.permalink}" style="color: var(--dark-gray); text-decoration: none;">${title}</a>
-                </h3>
-                <p class="author" style="font-size: 0.85rem; color: var(--primary-gray); font-style: italic; margin-bottom: 10px;">
-                    Par : ${author}
-                </p>
-                <p class="excerpt" style="font-size: 0.95rem; color: #444;">
-                    ${content}
-                </p>
+            <article class="search-result-big">
+                <h3><a href="${permalink}" class="article-title-link">${title}</a></h3>
+                <div class="author">par : <strong>${author}</strong></div>
+                <div class="excerpt">${content}...</div>
             </article>
         `;
     }).join('');
+
+    container.innerHTML = countHTML + resultsHTML;
 }
 
 /**
- * Fonction de surlignage utilisant les indices de Fuse.js
+ * Surlignage des termes
  */
 function highlight(text, indices) {
+    if (!text) return "";
     let result = "";
     let lastIndex = 0;
+    const sortedIndices = [...indices].sort((a, b) => a[0] - b[0]);
 
-    // On trie les indices pour éviter les décalages
-    indices.sort((a, b) => a[0] - b[0]).forEach(([start, end]) => {
-        // On ne surligne que si la séquence fait au moins 2 caractères
-        if ((end - start) >= 1) {
+    for (const [start, end] of sortedIndices) {
+        if (start < text.length) {
             result += text.substring(lastIndex, start) +
-                `<mark style="background-color: var(--signature-violet); color: white; padding: 0 2px; border-radius: 3px;">` +
-                text.substring(start, end + 1) +
-                `</mark>`;
+                `<mark>` + text.substring(start, end + 1) + `</mark>`;
             lastIndex = end + 1;
         }
-    });
+    }
     return result + text.substring(lastIndex);
 }
 
-/**
- * Écouteur d'événement sur l'input de la page de recherche
- */
-const searchPageInput = document.getElementById('search-page-input');
-if (searchPageInput) {
-    searchPageInput.addEventListener('input', (e) => {
-        executeSearch(e.target.value);
-    });
-}
-
-// Lancement de l'initialisation
-initSearch();
+document.addEventListener('DOMContentLoaded', initSearch);

@@ -500,7 +500,7 @@ mark {
 }
 
 #search-results {
-    position: absolute;
+    /*position: absolute;*/
     top: 100%; /* Juste en dessous de l'input */
     left: 0;
     right: 0;
@@ -591,4 +591,28 @@ mark {
     color: white;
     padding: 0 2px;
     border-radius: 3px;
+}
+/* Style de base de l'input sur la page recherche */
+#search-input-page {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd; /* Bordure légère par défaut comme le formulaire */
+    border-radius: var(--btn-radius);
+    box-sizing: border-box;
+    outline: none;
+    transition: var(--transition);
+    background-color: #ffffff;
+}
+
+/* Effet au Focus (clic) : On retire le bleu et on active les bords gauche/bas */
+#search-input-page:focus {
+    outline: none !important;      /* Supprime le contour bleu standard */
+    box-shadow: none !important;   /* Supprime l'ombre bleue de Bootstrap */
+
+    /* On imite exactement le comportement de votre formulaire de contact */
+    border-color: #ddd !important;
+    border-left: 4px solid var(--signature-violet) !important;
+    border-bottom: 4px solid var(--signature-violet) !important;
+
+    background-color: #fff;
 }
