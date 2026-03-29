@@ -1,6 +1,15 @@
 let fuse;
 
 /**
+ * Normalisation des chaînes (suppression des accents)
+ */
+function normalize(str) {
+    return str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+}
+
+/**
  * Initialisation de la recherche
  */
 async function initSearch() {
@@ -29,7 +38,13 @@ async function initSearch() {
             threshold: 0.3,
             minMatchCharLength: 3,
             includeMatches: true,
-            ignoreLocation: true
+            ignoreLocation: true,
+
+            // Normalisation des champs indexés
+            getFn: (obj, path) => {
+                const value = Fuse.config.getFn(obj, path);
+                return typeof value === "string" ? normalize(value) : value;
+            }
         };
 
         fuse = new Fuse(data, options);
@@ -48,7 +63,6 @@ async function initSearch() {
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value;
 
-            // On gère la croix seulement si elle existe dans le HTML
             if (clearBtn) {
                 clearBtn.style.display = query.length > 0 ? 'block' : 'none';
             }
@@ -56,12 +70,12 @@ async function initSearch() {
             executeSearch(query);
         });
 
-        // 3. Action du clic sur la croix (si elle existe)
+        // 3. Action du clic sur la croix
         if (clearBtn) {
             clearBtn.addEventListener('click', () => {
                 searchInput.value = "";
                 clearBtn.style.display = 'none';
-                executeSearch(""); // Vide les résultats
+                executeSearch("");
                 searchInput.focus();
             });
         }
@@ -83,7 +97,8 @@ function executeSearch(query) {
         return;
     }
 
-    const results = fuse.search(query);
+    // Normalisation de la requête
+    const results = fuse.search(normalize(query));
 
     if (results.length === 0) {
         container.innerHTML = `<p class="mt-4" style="color: var(--primary-gray);">Aucun résultat trouvé pour "<strong>${query}</strong>".</p>`;
