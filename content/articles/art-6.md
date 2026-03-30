@@ -1,9 +1,10 @@
 ---
-title: "Article no 6"
+title: CMS hugo épisode 6
 date: 2026-02-10 08:47:15
 draft: false
-weight: 80
+weight: 60
 ---
-Ceci est l'article numéro six, avec weight 90.Je commence à maitriser Hugo.  
+Je commence à maitriser Hugo, et donc aussi le logiciel Marker pour éditer les fichiers .md.  
 Ceci est un nouveau paragraphe.  
-A bientôt.
+Je vais maintenant uploader sur InfintyFree pour voir le résultat sur mon site.  
+

@@ -1,10 +1,10 @@
 ---
-title: Mon premier article
+title: CMS hugo épisode 1
+date: 2026-01-22
 publishDate: 2026-01-22T17:25:28+01:00
-weight: 30
+weight: 10
 draft: false
 ---
-Ceci est le contenu  
-Ceci est le premier article, dont le weight est 30.  
-
-Je rajoute Maïa, maïa, Maia_1 pour test de la recherche
+Je vais essayer d'utiliser le CMS Hugo.  
+J'installe donc Hugo depuis le dépot Archlinux.  
+Jusque là, tout va bien.  
