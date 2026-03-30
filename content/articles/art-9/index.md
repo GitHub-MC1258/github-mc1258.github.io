@@ -1,5 +1,5 @@
 ---
-title: "Test garçon"
+title: "Test galerie photo-9"
 date: 2026-01-25
 weight: 110
 draft: false

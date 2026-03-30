@@ -1,41 +1,48 @@
 {{ define "main" }}
-<!--<h3>le list.html de layouts/articles</h3> -->
-  <section class="container mt-4"data-pagefind-ignore>
+  <section class="container mt-4" data-pagefind-ignore>
     <h1 class="display-5 fw-bold mb-4">{{ .Title }}</h1>
 
     {{ $p := .Paginate .Pages }}
 
     <div class="list-group list-group-flush">
       {{ range $p.Pages }}
-        <div class="list-group-item px-0 border-0 mb-3"> <article class="d-flex align-items-baseline flex-wrap">
+        <div class="list-group-item px-0 border-0 mb-4">
+          <article>
+            <div class="d-flex align-items-baseline flex-wrap mb-1">
+                <h2 class="h5 mb-0 me-3">
+                  <a href="{{ .RelPermalink }}" class="article-title-link text-decoration-none">
+                    {{ .Title }}
+                  </a>
+                </h2>
 
-            <h2 class="h5 mb-0 me-3">
-              <a href="{{ .RelPermalink }}" class="article-title-link">
-                {{ .Title }}
-              </a>
-            </h2>
-
-            <div class="text-muted small">
-              <time datetime="{{ .Date }}">
-                {{ .Date.Format "02/01/2006" }}
-              </time>
-
-              {{ $author := .Params.author | default .Site.Params.author }}
-              {{ with $author }}
-                <span class="ms-1"> • {{ . }}</span>
-              {{ end }}
+                <div class="text-muted small">
+                  <time datetime="{{ .Date }}">
+                    {{ .Date.Format "02/01/2006" }}
+                  </time>
+                  {{ $author := .Params.author | default .Site.Params.author }}
+                  {{ with $author }}
+                    <span class="ms-1"> • {{ . }}</span>
+                  {{ end }}
+                </div>
             </div>
 
+            <div class="article-summary mt-2" style="color: var(--primary-gray); font-size: 0.95rem; line-height: 1.6;">
+                {{ .Plain | truncate 200 "..." }}
+                <a href="{{ .RelPermalink }}" class="read-more-btn">Lire plus</a>
+            </div>
           </article>
         </div>
       {{ end }}
     </div>
 
+    {{ if gt $p.TotalPages 1 }}
     <nav class="mt-5">
       <ul class="pagination">
         {{ if $p.HasPrev }}
           <li class="page-item">
-            <a class="page-link" href="{{ $p.Prev.URL }}">←</a>
+            <a class="page-link" href="{{ $p.Prev.URL }}" aria-label="Précédent">
+              <span aria-hidden="true">←</span>
+            </a>
           </li>
         {{ end }}
 
@@ -47,10 +54,36 @@
 
         {{ if $p.HasNext }}
           <li class="page-item">
-            <a class="page-link" href="{{ $p.Next.URL }}">→</a>
+            <a class="page-link" href="{{ $p.Next.URL }}" aria-label="Suivant">
+              <span aria-hidden="true">→</span>
+            </a>
           </li>
         {{ end }}
       </ul>
     </nav>
+    {{ end }}
   </section>
+
+  <style>
+    .read-more-btn {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--signature-violet);
+        text-decoration: none;
+        transition: opacity 0.2s;
+    }
+    .read-more-btn:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+    }
+    .page-item.active .page-link {
+        background-color: var(--signature-violet);
+        border-color: var(--signature-violet);
+    }
+    .page-link {
+        color: var(--signature-violet);
+    }
+  </style>
 {{ end }}

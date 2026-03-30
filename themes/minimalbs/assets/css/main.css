@@ -616,3 +616,28 @@ mark {
 
     background-color: #fff;
 }
+/*=======================================*/
+/* Style pour l'extrait de texte */
+.article-summary {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555; /* Un gris doux pour le texte */
+}
+
+/* Style du bouton "Lire plus" */
+.read-more-btn {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--signature-violet); /* Ta couleur fétiche */
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.read-more-btn:hover {
+    color: var(--signature-violet);
+    border-bottom: 1px solid var(--signature-violet);
+    padding-left: 4px; /* Petit effet de mouvement au survol */
+}

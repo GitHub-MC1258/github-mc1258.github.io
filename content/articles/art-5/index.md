@@ -1,12 +1,18 @@
 ---
-title: Mon cinquième article
-publishDate: 2026-03-26T17:25:28+01:00
-weight: 30
+title: "Post-5"
+date: 2026-02-10 15:53:48
 draft: false
-image: "bryce-canyon.jpg"
+weight: 70
+image: "Nice-Matin.jpg"
 ---
+ceci est le post-5, c'est un bundle.  
 
-{{< img-left src="bryce-canyon.jpg" alt="Bryce Canyon" >}}
-Cei est le cinquième article pour tester la maj immédiate  
-Je laisse la ligne ci-dessous pour le future test de Flexsearch  
-Je rajoute Maïa, maïa, Maia_1 pour test de la recherche
+je vais donc inserer une image
+{{< img-left src="Nice-Matin.jpg" alt="le journal" >}}
+avec position en haut a droite de la photo.  
+et maintenant , je vais écrire 'garçon'  
+Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.  
+La réflexion initiée dans Sapiens. Là où ce dernier retraçait l’histoire de l’humanité, Homo Deus s’aventure plus loin.  
+
+Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.
+

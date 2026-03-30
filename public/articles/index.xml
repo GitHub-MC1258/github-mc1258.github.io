@@ -1,98 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Mon p'tit site</title><link>https://github-mc1258.github.io/articles/</link><description>Recent content in Articles on Mon p'tit site</description><generator>Hugo</generator><language>fr-FR</language><lastBuildDate>Thu, 26 Mar 2026 17:25:28 +0100</lastBuildDate><atom:link href="https://github-mc1258.github.io/articles/index.xml" rel="self" type="application/rss+xml"/><item><title>Mon cinquième article</title><link>https://github-mc1258.github.io/articles/art-5/</link><pubDate>Thu, 26 Mar 2026 17:25:28 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-5/</guid><description>&lt;p&gt;
-
-
-
-&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="../articles/art-5/bryce-canyon.jpg" alt="Bryce Canyon" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-Cei est le cinquième article pour tester la maj immédiate&lt;br&gt;
-Je laisse la ligne ci-dessous pour le future test de Flexsearch&lt;br&gt;
-Je rajoute Maïa, maïa, Maia_1 pour test de la recherche&lt;/p&gt;</description></item><item><title>Mon premier article</title><link>https://github-mc1258.github.io/articles/art-1/</link><pubDate>Thu, 22 Jan 2026 17:25:28 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-1/</guid><description>&lt;p&gt;
-
-
-
-&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="../articles/art-1/bryce-canyon.jpg" alt="Bryce Canyon" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-Ceci est le contenu&lt;br&gt;
-Ceci est le premier article, dont le weight est 30.&lt;/p&gt;
-&lt;p&gt;Je rajoute Maïa, maïa, Maia_1 pour test de la recherche&lt;br&gt;
-En même temps, je rajoute françoise et garçon.&lt;/p&gt;</description></item><item><title>Article no 2</title><link>https://github-mc1258.github.io/articles/art-2/</link><pubDate>Thu, 22 Jan 2026 10:30:36 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-2/</guid><description>&lt;h1 id="bienvenue-sur-mon-deuxième-article-avec-hugo"&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;weight = 40&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet. In numquam facere est dicta voluptas id consequatur soluta sit esse consectetur 33 voluptatem voluptatem. Ab harum illum quo reprehenderit reiciendis qui provident quidem et temporibus numquam qui nobis debitis et ducimus nemo non saepe amet.&lt;/p&gt;
-&lt;p&gt;Vel nesciunt esse et adipisci quia qui enim eius et similique deleniti sit quos accusamus qui consequatur explicabo. Aut quod nihil qui iure dolores non error ipsum qui autem aspernatur et atque alias et dicta facilis non galisum delectus. Sed nesciunt voluptas est commodi impedit aut facere dolores ut voluptatum itaque hic cumque nihil aut necessitatibus cupiditate sed voluptas commodi. Ut quia asperiores et culpa optio non officiis aperiam aut quasi harum et sunt veritatis et nobis alias aut fugit minima.&lt;/p&gt;</description></item><item><title>Article no 3</title><link>https://github-mc1258.github.io/articles/art-3/</link><pubDate>Thu, 22 Jan 2026 10:30:36 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-3/</guid><description>&lt;h1 id="bienvenue-sur-mon-troisième-article-avec-hugo"&gt;Bienvenue sur mon troisième article avec Hugo.&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne pour GIT.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;weight = 40&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet. In numquam facere est dicta voluptas id consequatur soluta sit esse consectetur 33 voluptatem voluptatem. Ab harum illum quo reprehenderit reiciendis qui provident quidem et temporibus numquam qui nobis debitis et ducimus nemo non saepe amet.&lt;/p&gt;
-&lt;p&gt;Vel nesciunt esse et adipisci quia qui enim eius et similique deleniti sit quos accusamus qui consequatur explicabo. Aut quod nihil qui iure dolores non error ipsum qui autem aspernatur et atque alias et dicta facilis non galisum delectus. Sed nesciunt voluptas est commodi impedit aut facere dolores ut voluptatum itaque hic cumque nihil aut necessitatibus cupiditate sed voluptas commodi. Ut quia asperiores et culpa optio non officiis aperiam aut quasi harum et sunt veritatis et nobis alias aut fugit minima.&lt;/p&gt;</description></item><item><title>Article no 4</title><link>https://github-mc1258.github.io/articles/art-4/</link><pubDate>Fri, 20 Mar 2026 10:30:36 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-4/</guid><description>&lt;h1 id="bienvenue-sur-mon-quatrième-article-avec-hugo"&gt;Bienvenue sur mon quatrième article avec Hugo.&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne pour GIT.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;weight = 60, date modifiée au 20 mars 2026&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet. In numquam facere est dicta voluptas id consequatur soluta sit esse consectetur 33 voluptatem voluptatem. Ab harum illum quo reprehenderit reiciendis qui provident quidem et temporibus numquam qui nobis debitis et ducimus nemo non saepe amet.&lt;/p&gt;
-&lt;p&gt;Vel nesciunt esse et adipisci quia qui enim eius et similique deleniti sit quos accusamus qui consequatur explicabo. Aut quod nihil qui iure dolores non error ipsum qui autem aspernatur et atque alias et dicta facilis non galisum delectus. Sed nesciunt voluptas est commodi impedit aut facere dolores ut voluptatum itaque hic cumque nihil aut necessitatibus cupiditate sed voluptas commodi. Ut quia asperiores et culpa optio non officiis aperiam aut quasi harum et sunt veritatis et nobis alias aut fugit minima.&lt;/p&gt;</description></item><item><title>Test garçon</title><link>https://github-mc1258.github.io/articles/art-9/</link><pubDate>Sun, 25 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-9/</guid><description>&lt;div class="pswp-gallery row" id="gallery-0"&gt;
- 
- 
- 
- 
-
- 
- 
- 
-
- &lt;div class="col-6 col-md-4 mb-4"&gt; 
- &lt;a href="../articles/art-9/Avatar.jpg"
- data-pswp-width="2668"
- data-pswp-height="2668"
- data-caption="Mon Avatar" 
- target="_blank"
- class="text-decoration-none"&gt; 
-
- &lt;img src="../articles/art-9/Avatar_hu_5e7c295a82ae257.jpg"
- alt="Mon Avatar"
- class="img-fluid rounded shadow-sm" /&gt; 
-
- 
- &lt;div class="gallery-caption mt-2 text-center"&gt;
- Mon Avatar
- &lt;/div&gt;
- 
- &lt;/a&gt;
- &lt;/div&gt;
- 
- 
- 
-
- &lt;div class="col-6 col-md-4 mb-4"&gt; 
- &lt;a href="../articles/art-9/photo_1.jpg"
- data-pswp-width="510"
- data-pswp-height="287"
- data-caption="Mon beau vélo Rewel" 
- target="_blank"
- class="text-decoration-none"&gt; 
-
- &lt;img src="../articles/art-9/photo_1_hu_ddd1133d56ad7235.jpg"
- alt="Mon beau vélo Rewel"
- class="img-fluid rounded shadow-sm" /&gt; 
-
- 
- &lt;div class="gallery-caption mt-2 text-center"&gt;
- Mon beau vélo Rewel
- &lt;/div&gt;
- 
- &lt;/a&gt;
- &lt;/div&gt;
- 
-&lt;/div&gt;
-
-&lt;p&gt;Voici une galerie photo avec &lt;em&gt;PhotoSwipe&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;
-&lt;p&gt;On souligne : &lt;u&gt;le weight est 60.&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;et maintenant le texte en gras !&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Mon p&#39;tit site</title>
+    <link>http://localhost:35025/articles/</link>
+    <description>Recent content in Articles on Mon p&#39;tit site</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Wed, 11 Feb 2026 09:40:38 +0100</lastBuildDate>
+    <atom:link href="http://localhost:35025/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mon premier article</title>
+      <link>http://localhost:35025/articles/art-1/</link>
+      <pubDate>Thu, 22 Jan 2026 17:25:28 +0100</pubDate>
+      <guid>http://localhost:35025/articles/art-1/</guid>
+      <description>&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;float-start me-3&#34; style=&#34;margin-bottom: 0.25rem;&#34;&gt;&#xA;  &lt;img src=&#34;../articles/art-1/bryce-canyon.jpg&#34; alt=&#34;Bryce Canyon&#34; class=&#34;img-fluid&#34; style=&#34;max-width:200px;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;Ceci est le contenu&lt;br&gt;&#xA;Ceci est le premier article, dont le weight est 30.&lt;/p&gt;&#xA;&lt;p&gt;Je rajoute Maïa, maïa, Maia_1 pour test de la recherche&lt;br&gt;&#xA;En même temps, je rajoute françoise et garçon.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Article no 2</title>
+      <link>http://localhost:35025/articles/art-2/</link>
+      <pubDate>Thu, 22 Jan 2026 10:30:36 +0100</pubDate>
+      <guid>http://localhost:35025/articles/art-2/</guid>
+      <description>&lt;h1 id=&#34;bienvenue-sur-mon-deuxième-article-avec-hugo&#34;&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;weight = 40&lt;/u&gt;&lt;/p&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet. In numquam facere est dicta voluptas id consequatur soluta sit esse consectetur 33 voluptatem voluptatem. Ab harum illum quo reprehenderit reiciendis qui provident quidem et temporibus numquam qui nobis debitis et ducimus nemo non saepe amet.&lt;/p&gt;&#xA;&lt;p&gt;Vel nesciunt esse et adipisci quia qui enim eius et similique deleniti sit quos accusamus qui consequatur explicabo. Aut quod nihil qui iure dolores non error ipsum qui autem aspernatur et atque alias et dicta facilis non galisum delectus. Sed nesciunt voluptas est commodi impedit aut facere dolores ut voluptatum itaque hic cumque nihil aut necessitatibus cupiditate sed voluptas commodi. Ut quia asperiores et culpa optio non officiis aperiam aut quasi harum et sunt veritatis et nobis alias aut fugit minima.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Troisième article</title>
+      <link>http://localhost:35025/articles/art-3/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <guid>http://localhost:35025/articles/art-3/</guid>
+      <description>&lt;div class=&#34;float-start me-3&#34; style=&#34;margin-bottom: 0.25rem;&#34;&gt;&#xA;  &lt;img src=&#34;../articles/art-3/bryce-canyon.jpg&#34; alt=&#34;Bryce Canyon&#34; class=&#34;img-fluid&#34; style=&#34;max-width:200px;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis.&lt;br&gt;&#xA;Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;br&gt;&#xA;Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post 4</title>
+      <link>http://localhost:35025/articles/art-4/</link>
+      <pubDate>Sun, 08 Feb 2026 07:00:00 +0100</pubDate>
+      <guid>http://localhost:35025/articles/art-4/</guid>
+      <description>&lt;div class=&#34;float-start me-3&#34; style=&#34;margin-bottom: 0.25rem;&#34;&gt;&#xA;  &lt;img src=&#34;../articles/art-4/SSD_Sandisk.jpg&#34; alt=&#34;un disque SSD&#34; class=&#34;img-fluid&#34; style=&#34;max-width:200px;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;p&gt;Test no 4 avec position en haut a droite de la photo.&lt;br&gt;&#xA;avec Françoise comme auteur&lt;br&gt;&#xA;Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.&lt;br&gt;&#xA;Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post-5</title>
+      <link>http://localhost:35025/articles/art-5/</link>
+      <pubDate>Tue, 10 Feb 2026 15:53:48 +0100</pubDate>
+      <guid>http://localhost:35025/articles/art-5/</guid>
+      <description>&lt;p&gt;ceci est le post-5, c&amp;rsquo;est un bundle.&lt;/p&gt;&#xA;&lt;p&gt;je vais donc inserer une image&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;float-start me-3&#34; style=&#34;margin-bottom: 0.25rem;&#34;&gt;&#xA;  &lt;img src=&#34;../articles/art-5/Nice-Matin.jpg&#34; alt=&#34;le journal&#34; class=&#34;img-fluid&#34; style=&#34;max-width:200px;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;avec position en haut a droite de la photo.&lt;br&gt;&#xA;et maintenant , je vais écrire &amp;lsquo;garçon&amp;rsquo;&lt;br&gt;&#xA;Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.&lt;br&gt;&#xA;La réflexion initiée dans Sapiens. Là où ce dernier retraçait l’histoire de l’humanité, Homo Deus s’aventure plus loin.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Article no 6</title>
+      <link>http://localhost:35025/articles/art-6/</link>
+      <pubDate>Tue, 10 Feb 2026 08:47:15 +0100</pubDate>
+      <guid>http://localhost:35025/articles/art-6/</guid>
+      <description>&lt;p&gt;Ceci est l&amp;rsquo;article numéro six, avec weight 90.Je commence à maitriser Hugo.&lt;br&gt;&#xA;Ceci est un nouveau paragraphe.&lt;br&gt;&#xA;A bientôt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Art-7</title>
+      <link>http://localhost:35025/articles/art-7/</link>
+      <pubDate>Tue, 10 Feb 2026 10:29:00 +0100</pubDate>
+      <guid>http://localhost:35025/articles/art-7/</guid>
+      <description>&lt;p&gt;l&amp;rsquo;article no7, suppression du weight, la date et surtout l&amp;rsquo;heure est OK.&lt;br&gt;&#xA;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis.&lt;br&gt;&#xA;Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit.&lt;br&gt;&#xA;Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Article-8</title>
+      <link>http://localhost:35025/articles/art-8/</link>
+      <pubDate>Wed, 11 Feb 2026 09:40:38 +0100</pubDate>
+      <guid>http://localhost:35025/articles/art-8/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Ceci est l&amp;rsquo;article no 8&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis.&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;float-start me-3&#34; style=&#34;margin-bottom: 0.25rem;&#34;&gt;&#xA;  &lt;img src=&#34;../articles/art-8/pano.jpg&#34; alt=&#34;entrée de ville&#34; class=&#34;img-fluid&#34; style=&#34;max-width:200px;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit.&lt;br&gt;&#xA;Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt.&lt;br&gt;&#xA;Aute ex ipsum id ut in est velit est laborum incididunt.&lt;br&gt;&#xA;&lt;em&gt;Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.&lt;/em&gt;&lt;br&gt;&#xA;&lt;u&gt;Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/u&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test galerie photo-9</title>
+      <link>http://localhost:35025/articles/art-9/</link>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:35025/articles/art-9/</guid>
+      <description>&lt;div class=&#34;pswp-gallery row&#34; id=&#34;gallery-0&#34;&gt;&#xA;  &#xA;  &#xA;    &#xA;  &#xA;&#xA;  &#xA;    &#xA;    &#xA;&#xA;    &lt;div class=&#34;col-6 col-md-4 mb-4&#34;&gt; &#xA;      &lt;a href=&#34;../articles/art-9/Avatar.jpg&#34;&#xA;         data-pswp-width=&#34;2668&#34;&#xA;         data-pswp-height=&#34;2668&#34;&#xA;         data-caption=&#34;Mon Avatar&#34; &#xA;         target=&#34;_blank&#34;&#xA;         class=&#34;text-decoration-none&#34;&gt; &#xA;&#xA;         &lt;img src=&#34;../articles/art-9/Avatar_hu_5e7c295a82ae257.jpg&#34;&#xA;              alt=&#34;Mon Avatar&#34;&#xA;              class=&#34;img-fluid rounded shadow-sm&#34; /&gt; &#xA;&#xA;         &#xA;           &lt;div class=&#34;gallery-caption mt-2 text-center&#34;&gt;&#xA;             Mon Avatar&#xA;           &lt;/div&gt;&#xA;         &#xA;      &lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &#xA;    &#xA;    &#xA;&#xA;    &lt;div class=&#34;col-6 col-md-4 mb-4&#34;&gt; &#xA;      &lt;a href=&#34;../articles/art-9/photo_1.jpg&#34;&#xA;         data-pswp-width=&#34;510&#34;&#xA;         data-pswp-height=&#34;287&#34;&#xA;         data-caption=&#34;Mon beau vélo Rewel&#34; &#xA;         target=&#34;_blank&#34;&#xA;         class=&#34;text-decoration-none&#34;&gt; &#xA;&#xA;         &lt;img src=&#34;../articles/art-9/photo_1_hu_ddd1133d56ad7235.jpg&#34;&#xA;              alt=&#34;Mon beau vélo Rewel&#34;&#xA;              class=&#34;img-fluid rounded shadow-sm&#34; /&gt; &#xA;&#xA;         &#xA;           &lt;div class=&#34;gallery-caption mt-2 text-center&#34;&gt;&#xA;             Mon beau vélo Rewel&#xA;           &lt;/div&gt;&#xA;         &#xA;      &lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Voici une galerie photo avec &lt;em&gt;PhotoSwipe&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;&#xA;&lt;p&gt;On souligne : &lt;u&gt;le weight est 60.&lt;/u&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;et maintenant le texte en gras !&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

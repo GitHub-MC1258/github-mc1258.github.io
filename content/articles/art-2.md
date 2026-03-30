@@ -2,7 +2,6 @@
 date: 2026-01-22T10:30:36+01:00
 weight: 40
 title: Article no 2
-author: Françoise
 ---
 
 # Bienvenue sur mon deuxième article avec Hugo.  
@@ -10,7 +9,6 @@ author: Françoise
 **Ceci est un test pour vérifier que tout fonctionne.**  
 
 <u>weight = 40</u>
-
 
 Lorem ipsum dolor sit amet. In numquam facere est dicta voluptas id consequatur soluta sit esse consectetur 33 voluptatem voluptatem. Ab harum illum quo reprehenderit reiciendis qui provident quidem et temporibus numquam qui nobis debitis et ducimus nemo non saepe amet.  
 

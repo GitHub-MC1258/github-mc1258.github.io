@@ -14,18 +14,15 @@
 
     <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
 
-    <div id="search-results" class="search-results-page-list">
-        </div>
+    <div id="search-results" class="search-results-page-list"></div>
 </div>
 
 <style>
-    /* ==========================================================================
-       1. CHAMP DE SAISIE (STYLE FORMULAIRE CONTACT)
-       ========================================================================== */
+    /* 1. CHAMP DE SAISIE : On utilise tes variables du main.css */
     #search-input-page {
         width: 100%;
         height: 55px;
-        padding: 1rem 3rem 1rem 1rem; /* Padding large à droite pour la croix */
+        padding: 1rem 3rem 1rem 1rem;
         border: 1px solid #ddd;
         border-radius: var(--btn-radius);
         font-size: 1.2rem;
@@ -34,13 +31,14 @@
         background-color: #ffffff;
     }
 
+    /* Effet Focus identique à ton formulaire de contact */
     #search-input-page:focus {
         outline: none !important;
-        box-shadow: none !important; /* Supprime le halo bleu de Bootstrap */
+        box-shadow: none !important;
         border-color: #ddd !important;
         border-left: 4px solid var(--signature-violet) !important;
         border-bottom: 4px solid var(--signature-violet) !important;
-        padding-left: 1.2rem; /* Petit effet de décalage élégant au clic */
+        padding-left: 1.2rem;
     }
 
     .search-wrapper-page {
@@ -50,7 +48,6 @@
         width: 100%;
     }
 
-    /* Bouton d'effacement (Croix) */
     .btn-clear {
         position: absolute;
         right: 15px;
@@ -61,47 +58,53 @@
         font-size: 1.8rem;
         color: var(--primary-gray);
         cursor: pointer;
-        line-height: 1;
-        padding: 0;
         transition: var(--transition);
         z-index: 5;
     }
 
-    .btn-clear:hover {
-        color: var(--signature-violet);
-        transform: translateY(-50%) scale(1.2);
-    }
+    /* 2. AFFICHAGE DES RÉSULTATS (Correction de la superposition) */
+.search-results-page-list#search-results {
+    position: relative !important; /* On annule l'absolute du main.css */
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+    max-height: none !important; /* On autorise une hauteur illimitée */
+    overflow: visible !important;
+    margin-top: 2rem !important;
+    z-index: 1 !important;
+    width: 100% !important;
+}
 
-    /* ==========================================================================
-       2. AFFICHAGE DES RÉSULTATS
-       ========================================================================== */
-    .search-results-page-list#search-results {
-        position: static !important; /* Annule le mode menu déroulant du header */
-        display: block !important;
-        box-shadow: none !important;
-        border: none !important;
-        max-height: none !important;
-        overflow: visible !important;
-        padding: 0 !important;
-        margin-top: 2rem !important;
-        background: transparent !important;
-    }
+/* On s'assure que chaque article prend bien sa place */
+.search-result-big {
+    display: block !important;
+    clear: both;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    animation: fadeIn 0.4s ease-out forwards;
+}
 
-    .search-result-big {
-        margin-bottom: 3rem;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid var(--border-color);
-        animation: fadeIn 0.4s ease-out forwards;
-    }
-
-    .search-result-big h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    .search-result-big .author {
+    /* Meta info : Date et Auteur */
+    .search-result-big .meta-info {
         font-size: 0.85rem;
         color: var(--primary-gray);
         margin-bottom: 10px;
+        font-style: normal; /* On force le style normal ici */
+    }
+
+    .search-result-big .date {
+        font-weight: 400;
+        color: var(--primary-gray);
+        text-transform: none; /* Aligné sur ton style 'time' du main.css */
+    }
+
+    .search-result-big .author {
+        font-weight: 600;
+        font-style: normal; /* Supprime l'italique hérité du thème */
     }
 
     .search-result-big .excerpt {
@@ -110,31 +113,16 @@
         font-size: 1rem;
     }
 
-    /* Surlignage des mots trouvés */
-    mark {
-        background-color: var(--signature-violet);
-        color: white;
-        padding: 0 4px;
-        border-radius: 3px;
-        font-weight: 500;
-    }
-
-    /* Animation d'apparition */
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(15px); }
         to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Responsive mobile */
     @media (max-width: 600px) {
-        #search-input-page {
-            font-size: 1rem;
-            height: 50px;
-        }
+        #search-input-page { font-size: 1rem; height: 50px; }
     }
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 <script src="/js/search.js"></script>
-
 {{ end }}
