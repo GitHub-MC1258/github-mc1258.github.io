@@ -1,6 +1,6 @@
 ---
 title: CMS hugo épisode 5
-date: 2026-01-27 15:53:48
+date: 2026-01-20 15:53:48
 draft: false
 weight: 50
 image: "Nice-Matin.jpg"

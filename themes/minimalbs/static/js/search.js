@@ -2,7 +2,11 @@ let fuse;
 
 function normalize(str) {
     if (!str) return "";
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    return str.normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // Supprime les accents
+        .replace(/[‘’'´`]/g, "'")      // Harmonise les apostrophes
+        .toLowerCase()
+        .trim();
 }
 
 async function initSearch() {
@@ -26,9 +30,11 @@ async function initSearch() {
             minMatchCharLength: 3,
             includeMatches: true,
             ignoreLocation: true,
+            // getFn personnalisé pour normaliser les données de l'index
             getFn: (obj, path) => {
-                const value = Fuse.config.getFn(obj, path);
-                return typeof value === "string" ? normalize(value) : value;
+                // Accès direct à la propriété (plus sûr que d'appeler Fuse.config)
+                const value = obj[path];
+                return (typeof value === "string") ? normalize(value) : value;
             }
         };
 
@@ -48,22 +54,26 @@ async function initSearch() {
                 searchInput.focus();
             });
         }
-    } catch (err) { console.error("Erreur :", err); }
+    } catch (err) {
+        console.error("Erreur lors de l'initialisation de la recherche :", err);
+    }
 }
 
 function executeSearch(query) {
     const container = document.getElementById('search-results');
     if (!container || !fuse) return;
 
-    if (!query || query.trim().length < 3) {
+    // On normalise la requête pour qu'elle matche avec l'index normalisé
+    const normalizedQuery = normalize(query);
+
+    if (!normalizedQuery || normalizedQuery.length < 3) {
         container.innerHTML = "";
         return;
     }
 
-    // 1. Recherche avec normalisation de la requête
-    let rawResults = fuse.search(normalize(query));
+    let rawResults = fuse.search(normalizedQuery);
 
-    // 2. Anti-doublons (On garde l'unicité par permalink)
+    // Anti-doublons par permalink
     const uniqueResultsMap = new Map();
     rawResults.forEach(result => {
         if (!uniqueResultsMap.has(result.item.permalink)) {
@@ -78,29 +88,36 @@ function executeSearch(query) {
         return;
     }
 
-    // 3. Affichage (Le tri est celui de Fuse par défaut : le plus pertinent en haut)
     const countText = results.length > 1 ? `${results.length} articles trouvés` : `${results.length} article trouvé`;
     const countHTML = `<p style="color: var(--primary-gray); font-weight: 600; margin-bottom: 2rem; font-size: 0.9rem; text-transform: uppercase;">${countText}</p>`;
 
     const resultsHTML = results.map(result => {
         let { title, author, content, permalink, date } = result.item;
+
+        // Valeurs par défaut
         author = author || "Michel C";
         const displayDate = date || "Date inconnue";
+        let displayTitle = title;
+        let displayAuthor = author;
+        let displayContent = (content || "").substring(0, 250);
 
-        result.matches.forEach(match => {
-            if (match.key === 'title') title = highlight(match.value, match.indices);
-            if (match.key === 'author') author = highlight(match.value, match.indices);
-            if (match.key === 'content') content = highlight(match.value.substring(0, 250), match.indices);
-        });
+        // Application du surlignage si des correspondances existent
+        if (result.matches) {
+            result.matches.forEach(match => {
+                if (match.key === 'title') displayTitle = highlight(match.value, match.indices);
+                if (match.key === 'author') displayAuthor = highlight(match.value, match.indices);
+                if (match.key === 'content') displayContent = highlight(match.value.substring(0, 250), match.indices);
+            });
+        }
 
         return `
             <article class="search-result-big">
-                <h3><a href="${permalink}" class="article-title-link">${title}</a></h3>
+                <h3><a href="${permalink}" class="article-title-link">${displayTitle}</a></h3>
                 <div class="meta-info">
                     <span class="date">${displayDate}</span> •
-                    <span class="author">${author}</span>
+                    <span class="author">${displayAuthor}</span>
                 </div>
-                <div class="excerpt">${content}...</div>
+                <div class="excerpt">${displayContent}...</div>
             </article>
         `;
     }).join('');
@@ -112,7 +129,9 @@ function highlight(text, indices) {
     if (!text) return "";
     let result = "";
     let lastIndex = 0;
+    // On s'assure que les indices sont triés
     const sortedIndices = [...indices].sort((a, b) => a[0] - b[0]);
+
     for (const [start, end] of sortedIndices) {
         if (start < text.length) {
             result += text.substring(lastIndex, start) + `<mark>` + text.substring(start, end + 1) + `</mark>`;

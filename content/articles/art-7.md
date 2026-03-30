@@ -1,6 +1,6 @@
 ---
 title: CMS hugo épisode 7
-date: 2026-02-11 10:29:00
+date: 2026-02-12 10:29:00
 draft: false
 weight: 70
 ---

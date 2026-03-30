@@ -1,13 +1,14 @@
 ---
-title: "Test galerie photo-9"
-date: 2026-01-25
+title: "CMS hugo épisode 9"
+date: 2026-02-22
 weight: 110
 draft: false
 resources:
   - src: "*"
 captions: "captions.yaml"
 ---
-
+Je teste maintenant un \'bundle-gallery\'.  
+cela fonctionne comme attendu.  
 {{< bundle-gallery >}}
 
 

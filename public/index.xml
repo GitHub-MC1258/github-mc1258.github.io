@@ -342,7 +342,9 @@
  })
  .catch(err =&gt; console.error("Erreur:", err));
  })();
-&lt;/script&gt;</description></item><item><title>Parcours du 10/12/2025</title><link>https://github-mc1258.github.io/activites/20251210/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/activites/20251210/</guid><description>&lt;p&gt;Parcours du 10/12/2025 exporté depuis Oruxmaps.&lt;/p&gt;
+&lt;/script&gt;</description></item><item><title>CMS hugo épisode 1</title><link>https://github-mc1258.github.io/articles/art-1/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-1/</guid><description>&lt;p&gt;Je vais essayer d&amp;rsquo;utiliser le CMS Hugo.&lt;br&gt;
+J&amp;rsquo;installe donc Hugo depuis le dépot Archlinux.&lt;br&gt;
+Jusque là, tout va bien.&lt;/p&gt;</description></item><item><title>Parcours du 10/12/2025</title><link>https://github-mc1258.github.io/activites/20251210/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/activites/20251210/</guid><description>&lt;p&gt;Parcours du 10/12/2025 exporté depuis Oruxmaps.&lt;/p&gt;
 &lt;link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /&gt;
 &lt;script src="https://unpkg.com/leaflet/dist/leaflet.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/gpxparser/dist/GPXParser.min.js"&gt;&lt;/script&gt;
@@ -967,11 +969,11 @@ Un petite aire gérée par la commune; le maire vient lui-même percevoir l&amp;
  &lt;/div&gt;
  
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>CMS hugo épisode 2</title><link>https://github-mc1258.github.io/articles/art-2/</link><pubDate>Fri, 23 Jan 2026 10:30:36 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-2/</guid><description>&lt;h1 id="bienvenue-sur-mon-deuxième-article-avec-hugo"&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;
+&lt;/p&gt;</description></item><item><title>CMS hugo épisode 2</title><link>https://github-mc1258.github.io/articles/art-2/</link><pubDate>Mon, 12 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-2/</guid><description>&lt;h1 id="bienvenue-sur-mon-deuxième-article-avec-hugo"&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;J&amp;rsquo;apprends le fonctionnement de Hugo.&lt;br&gt;
-Il faut apprendre l&amp;rsquo;architecture de ce CMS: les divers dossiers contents,layouts etc..&lt;br&gt;
-Je pars d&amp;rsquo;un thème minimal bootstrap.&lt;br&gt;
+&lt;p&gt;J&amp;rsquo;apprends le fonctionnement de Hugo.
+Il faut comprendre l&amp;rsquo;architecture de ce CMS: les divers dossiers contents, themes, public, layouts etc..
+Je pars d&amp;rsquo;un thème minimal bootstrap.
 Allez, on construit avec l&amp;rsquo;aide de l&amp;rsquo;IA Gemini&lt;/p&gt;</description></item><item><title>Saint Cyprien le 16 juin</title><link>https://github-mc1258.github.io/voyages/2025/02.saint-cyprien-le-16-juin/</link><pubDate>Mon, 16 Jun 2025 11:07:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/02.saint-cyprien-le-16-juin/</guid><description>&lt;p&gt;Nous allons nous poser au Camping Calagogo à Saint Cyprien.&lt;br&gt;
 Soleil, mer et sable et tours de vélo !&lt;br&gt;
 Patrick nous rejoint pour quelques jours.
@@ -1595,21 +1597,9 @@ Je remonte la presqu&amp;rsquo;île de Quiberon en suivant les belles pistes cyc
  &lt;/a&gt;
  &lt;/div&gt;
  
-&lt;/div&gt;</description></item><item><title>Mon premier article</title><link>https://github-mc1258.github.io/articles/art-1/</link><pubDate>Thu, 22 Jan 2026 17:25:28 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-1/</guid><description>&lt;p&gt;
-
-
-
-&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="./articles/art-1/bryce-canyon.jpg" alt="Bryce Canyon" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-Ceci est le contenu&lt;br&gt;
-Ceci est le premier article, dont le weight est 30.&lt;/p&gt;
-&lt;p&gt;Je rajoute Maïa, maïa, Maia_1 pour test de la recherche&lt;br&gt;
-En même temps, je rajoute françoise et garçon.&lt;/p&gt;</description></item><item><title>Valras le 26 juin</title><link>https://github-mc1258.github.io/voyages/2025/03.valras-le-26-juin/</link><pubDate>Fri, 27 Jun 2025 11:07:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/03.valras-le-26-juin/</guid><description>&lt;p&gt;Nous quittons Saint Cyprien pour Valras pour nous poser au camping de la Plage et du Bord de mer.
+&lt;/div&gt;</description></item><item><title>CMS hugo épisode 3</title><link>https://github-mc1258.github.io/articles/art-3/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-3/</guid><description>&lt;h1 id="bienvenue-sur-mon-troisième-article-avec-hugo"&gt;Bienvenue sur mon troisième article avec Hugo.&lt;/h1&gt;
+&lt;p&gt;Jusque là, tout avance à peu prés bien, le squelette se monte petit à petit.&lt;br&gt;
+je me débas avec les scripts.js , les html et autres css.&lt;/p&gt;</description></item><item><title>Valras le 26 juin</title><link>https://github-mc1258.github.io/voyages/2025/03.valras-le-26-juin/</link><pubDate>Fri, 27 Jun 2025 11:07:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/03.valras-le-26-juin/</guid><description>&lt;p&gt;Nous quittons Saint Cyprien pour Valras pour nous poser au camping de la Plage et du Bord de mer.
 &lt;div class="pswp-gallery row" id="gallery-0"&gt;
  
  
@@ -1911,7 +1901,9 @@ Nous restons plus simples et nous baignons.
  &lt;/a&gt;
  &lt;/div&gt;
  
-&lt;/div&gt;</description></item><item><title>Forcalquier le 2 mai.</title><link>https://github-mc1258.github.io/voyages/2023/05.forcalquier-le-2-mai-2023/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/voyages/2023/05.forcalquier-le-2-mai-2023/</guid><description>&lt;p&gt;Forcalquier le 2 mai. Le temps se met enfin au beau (et chaud l&amp;rsquo;après-midi).&lt;br&gt;
+&lt;/div&gt;</description></item><item><title>CMS hugo épisode 4</title><link>https://github-mc1258.github.io/articles/art-4/</link><pubDate>Sun, 18 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-4/</guid><description>&lt;h1 id="bienvenue-sur-mon-quatrième-article-avec-hugo"&gt;Bienvenue sur mon quatrième article avec Hugo.&lt;/h1&gt;
+&lt;p&gt;Je commence à avoir mes premiers articles.&lt;br&gt;
+Je teste les shortcodes pour afficher les &amp;lsquo;gallery&amp;rsquo;, l&amp;rsquo;insertion des photos dans le texte et autre bundle.&lt;/p&gt;</description></item><item><title>Forcalquier le 2 mai.</title><link>https://github-mc1258.github.io/voyages/2023/05.forcalquier-le-2-mai-2023/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/voyages/2023/05.forcalquier-le-2-mai-2023/</guid><description>&lt;p&gt;Forcalquier le 2 mai. Le temps se met enfin au beau (et chaud l&amp;rsquo;après-midi).&lt;br&gt;
 Le matin, nous allons faire des courses à Manosque.
 L&amp;rsquo;après-midi, nous allons visiter les Jardins de Salagon à 15 mn en vélo.&lt;br&gt;
 Jolis jardins autour d&amp;rsquo;un prieuré renaissance qui a subi quelques transformations puisqu&amp;rsquo;il était devenu une ferme.&lt;br&gt;
@@ -2798,7 +2790,7 @@ Nous sommes étonnés du nombre de monuments et de vestiges romains.
  &lt;/div&gt;
  
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>CMS hugo épisode 5</title><link>https://github-mc1258.github.io/articles/art-5/</link><pubDate>Tue, 27 Jan 2026 15:53:48 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-5/</guid><description>&lt;p&gt;Toujours test avec Hugo; ceci est le post-5, c&amp;rsquo;est un bundle.&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>CMS hugo épisode 5</title><link>https://github-mc1258.github.io/articles/art-5/</link><pubDate>Tue, 20 Jan 2026 15:53:48 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-5/</guid><description>&lt;p&gt;Toujours test avec Hugo; ceci est le post-5, c&amp;rsquo;est un bundle.&lt;/p&gt;
 &lt;p&gt;je vais donc inserer une image
 
 
@@ -2833,16 +2825,7 @@ Camping tout en pente avec des emplacements exigus.&lt;/p&gt;</description></ite
 
 
 
-&lt;p&gt;On loge au camping car park d&amp;rsquo;Aix Les Bains&lt;/p&gt;</description></item><item><title>Troisième article</title><link>https://github-mc1258.github.io/articles/art-3/</link><pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate><guid>https://github-mc1258.github.io/articles/art-3/</guid><description>&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="./articles/art-3/bryce-canyon.jpg" alt="Bryce Canyon" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis.&lt;br&gt;
-Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;br&gt;
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.&lt;/p&gt;</description></item><item><title>Vendres-Plage le 25 juin 2022</title><link>https://github-mc1258.github.io/voyages/2022/05.vendres-plage-le-25-juin-2022/</link><pubDate>Mon, 12 Sep 2022 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2022/05.vendres-plage-le-25-juin-2022/</guid><description>&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
+&lt;p&gt;On loge au camping car park d&amp;rsquo;Aix Les Bains&lt;/p&gt;</description></item><item><title>Vendres-Plage le 25 juin 2022</title><link>https://github-mc1258.github.io/voyages/2022/05.vendres-plage-le-25-juin-2022/</link><pubDate>Mon, 12 Sep 2022 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2022/05.vendres-plage-le-25-juin-2022/</guid><description>&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
  &lt;img src="./voyages/2022/05.vendres-plage-le-25-juin-2022/featured-img.jpg" alt="Aire" class="img-fluid" style="max-width:200px;"&gt;
 &lt;/div&gt;
 
@@ -3306,19 +3289,9 @@ Malheureusement pour nous, soit les visites de ces maisons étaient complètes, 
 
 
 
-Nous rentrons en passant par la Motte-Servolex afin de jouer les grand-parents.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 6</title><link>https://github-mc1258.github.io/articles/art-6/</link><pubDate>Tue, 10 Feb 2026 08:47:15 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-6/</guid><description>&lt;p&gt;Je commence à maitriser Hugo, et donc aussi le logiciel Marker pour éditer les fichiers .md.&lt;br&gt;
+Nous rentrons en passant par la Motte-Servolex afin de jouer les grand-parents.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 6</title><link>https://github-mc1258.github.io/articles/art-6/</link><pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-6/</guid><description>&lt;p&gt;Je commence à maitriser Hugo, et donc aussi le logiciel Marker pour éditer les fichiers .md.&lt;br&gt;
 Ceci est un nouveau paragraphe.&lt;br&gt;
-Je vais maintenant uploader sur InfintyFree pour voir le résultat sur mon site.&lt;/p&gt;</description></item><item><title>Post 4</title><link>https://github-mc1258.github.io/articles/art-4/</link><pubDate>Sun, 08 Feb 2026 07:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-4/</guid><description>&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="./articles/art-4/SSD_Sandisk.jpg" alt="un disque SSD" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;Test no 4 avec position en haut a droite de la photo.&lt;br&gt;
-avec Françoise comme auteur&lt;br&gt;
-Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.&lt;br&gt;
-Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.&lt;/p&gt;</description></item><item><title>Vogüé le 7 juillet</title><link>https://github-mc1258.github.io/voyages/2025/05.voguee-le-7-juillet/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/05.voguee-le-7-juillet/</guid><description>&lt;p&gt;Nous allons au camping des Roches à Vogüé.&lt;br&gt;
+Je vais maintenant uploader sur InfintyFree pour voir le résultat sur mon site.&lt;/p&gt;</description></item><item><title>Vogüé le 7 juillet</title><link>https://github-mc1258.github.io/voyages/2025/05.voguee-le-7-juillet/</link><pubDate>Tue, 08 Jul 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/05.voguee-le-7-juillet/</guid><description>&lt;p&gt;Nous allons au camping des Roches à Vogüé.&lt;br&gt;
 Nicolas nous rejoint en moto.
 &lt;div class="pswp-gallery row" id="gallery-0"&gt;
  
@@ -4060,7 +4033,7 @@ Au cours d&amp;rsquo;un tour en vélo, je repère un parc ornithologique à Sain
  &lt;/div&gt;
  
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>CMS hugo épisode 7</title><link>https://github-mc1258.github.io/articles/art-7/</link><pubDate>Wed, 11 Feb 2026 10:29:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-7/</guid><description>&lt;p&gt;Je commence à me débrouiller avec les differents dossiers, les build, et les upload. J&amp;rsquo;optimise les differents manipulations par des scripts bash.&lt;br&gt;
+&lt;/p&gt;</description></item><item><title>CMS hugo épisode 7</title><link>https://github-mc1258.github.io/articles/art-7/</link><pubDate>Thu, 12 Feb 2026 10:29:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-7/</guid><description>&lt;p&gt;Je commence à me débrouiller avec les differents dossiers, les build, et les upload. J&amp;rsquo;optimise les differents manipulations par des scripts bash.&lt;br&gt;
 L&amp;rsquo;ensemble commence à fonctionner.&lt;/p&gt;</description></item><item><title>Barberaz le 11 juillet</title><link>https://github-mc1258.github.io/voyages/2025/06.barberaz-le-11-juillet/</link><pubDate>Sat, 12 Jul 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/06.barberaz-le-11-juillet/</guid><description>&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
  &lt;img src="./voyages/2025/06.barberaz-le-11-juillet/featured-cc3.jpg" alt="image manquante" class="img-fluid" style="max-width:200px;"&gt;
 &lt;/div&gt;
@@ -7806,23 +7779,8 @@ Ballade pédestre et courses pour Françoise.&lt;/p&gt;
 
 &lt;p&gt;La Grande-Motte le 9 mai.
 Nous décidons de rester encore un jour, la météo étant maussade sur la région afin de profiter des commerces et du camping.
-Les averses s&amp;rsquo;invitent dans l&amp;rsquo;après-midi.&lt;/p&gt;</description></item><item><title>Article-8</title><link>https://github-mc1258.github.io/articles/art-8/</link><pubDate>Wed, 11 Feb 2026 09:40:38 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-8/</guid><description>&lt;p&gt;&lt;strong&gt;Ceci est l&amp;rsquo;article no 8&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis.
-
-
-
-
-&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="./articles/art-8/pano.jpg" alt="entrée de ville" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit.&lt;br&gt;
-Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt.&lt;br&gt;
-Aute ex ipsum id ut in est velit est laborum incididunt.&lt;br&gt;
-&lt;em&gt;Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.&lt;/em&gt;&lt;br&gt;
-&lt;u&gt;Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/u&gt;&lt;/p&gt;</description></item><item><title>Thiel le 20 août</title><link>https://github-mc1258.github.io/voyages/2025/09.thiel-le-20-aout/</link><pubDate>Thu, 21 Aug 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/09.thiel-le-20-aout/</guid><description>&lt;p&gt;Nous décidons de partir pour nous ressourcer à La Roche-Posay.
+Les averses s&amp;rsquo;invitent dans l&amp;rsquo;après-midi.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 8</title><link>https://github-mc1258.github.io/articles/art-8/</link><pubDate>Sat, 14 Feb 2026 09:40:38 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-8/</guid><description>&lt;p&gt;Voici l'épisode 8 de mon apprentissage avec Hugo.&lt;/p&gt;
+&lt;p&gt;J&amp;rsquo;avance sur les differents fonctions de Hugo et les optimisations de l&amp;rsquo;upload via lftp.&lt;/p&gt;</description></item><item><title>Thiel le 20 août</title><link>https://github-mc1258.github.io/voyages/2025/09.thiel-le-20-aout/</link><pubDate>Thu, 21 Aug 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/09.thiel-le-20-aout/</guid><description>&lt;p&gt;Nous décidons de partir pour nous ressourcer à La Roche-Posay.
 Etape pour la nuit à Thiel sur Acolin, aire gratuite avec services gratuits.
 Cette aire fait partie des aires de CC mises à disposition par la communauté de communes du pays de Chevagnes.
 Initiative remarquable !!
@@ -8255,7 +8213,9 @@ Jolie petite ville touristique !
  &lt;/div&gt;
  
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>Test galerie photo-9</title><link>https://github-mc1258.github.io/articles/art-9/</link><pubDate>Sun, 25 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-9/</guid><description>&lt;div class="pswp-gallery row" id="gallery-0"&gt;
+&lt;/p&gt;</description></item><item><title>CMS hugo épisode 9</title><link>https://github-mc1258.github.io/articles/art-9/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-9/</guid><description>&lt;p&gt;Je teste maintenant un 'bundle-gallery'.&lt;br&gt;
+cela fonctionne comme attendu.&lt;br&gt;
+&lt;div class="pswp-gallery row" id="gallery-0"&gt;
  
  
  
@@ -8289,6 +8249,25 @@ Jolie petite ville touristique !
  
 
  &lt;div class="col-6 col-md-4 mb-4"&gt; 
+ &lt;a href="./articles/art-9/avatar_ours.png"
+ data-pswp-width="352"
+ data-pswp-height="528"
+ data-caption="" 
+ target="_blank"
+ class="text-decoration-none"&gt; 
+
+ &lt;img src="./articles/art-9/avatar_ours_hu_4ba254a340466a88.png"
+ alt="avatar_ours.png"
+ class="img-fluid rounded shadow-sm" /&gt; 
+
+ 
+ &lt;/a&gt;
+ &lt;/div&gt;
+ 
+ 
+ 
+
+ &lt;div class="col-6 col-md-4 mb-4"&gt; 
  &lt;a href="./articles/art-9/photo_1.jpg"
  data-pswp-width="510"
  data-pswp-height="287"
@@ -8309,11 +8288,9 @@ Jolie petite ville touristique !
  &lt;/div&gt;
  
 &lt;/div&gt;
-
+&lt;/p&gt;
 &lt;p&gt;Voici une galerie photo avec &lt;em&gt;PhotoSwipe&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;
-&lt;p&gt;On souligne : &lt;u&gt;le weight est 60.&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;et maintenant le texte en gras !&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Loches le 21 août</title><link>https://github-mc1258.github.io/voyages/2025/10.loches-le-21-aout/</link><pubDate>Fri, 22 Aug 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/10.loches-le-21-aout/</guid><description>&lt;h2 id="hahahugoshortcode171s0hbhb"&gt;
+&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;</description></item><item><title>Loches le 21 août</title><link>https://github-mc1258.github.io/voyages/2025/10.loches-le-21-aout/</link><pubDate>Fri, 22 Aug 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/10.loches-le-21-aout/</guid><description>&lt;h2 id="hahahugoshortcode111s0hbhb"&gt;
 
 
 
@@ -10761,7 +10738,7 @@ Et bien sûr, Gustave nous fait déguster son calva !
  &lt;/div&gt;
  
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>Villeneuve le 24 août</title><link>https://github-mc1258.github.io/voyages/2025/11.villeneuve-le-24-aout/</link><pubDate>Mon, 25 Aug 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/11.villeneuve-le-24-aout/</guid><description>&lt;h2 id="hahahugoshortcode174s0hbhb"&gt;
+&lt;/p&gt;</description></item><item><title>Villeneuve le 24 août</title><link>https://github-mc1258.github.io/voyages/2025/11.villeneuve-le-24-aout/</link><pubDate>Mon, 25 Aug 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/11.villeneuve-le-24-aout/</guid><description>&lt;h2 id="hahahugoshortcode113s0hbhb"&gt;
 
 
 
@@ -17282,7 +17259,7 @@ Enorme orage, coupure de courant, fuites d’eau dans le musée, visite écourt�
  &lt;/div&gt;
  
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>Port St Louis du Rhone le 22 septembre</title><link>https://github-mc1258.github.io/voyages/2025/16.port-st-louis-du-rhone-le-22-septembre/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/16.port-st-louis-du-rhone-le-22-septembre/</guid><description>&lt;h2 id="hahahugoshortcode190s0hbhb"&gt;
+&lt;/p&gt;</description></item><item><title>Port St Louis du Rhone le 22 septembre</title><link>https://github-mc1258.github.io/voyages/2025/16.port-st-louis-du-rhone-le-22-septembre/</link><pubDate>Tue, 23 Sep 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/16.port-st-louis-du-rhone-le-22-septembre/</guid><description>&lt;h2 id="hahahugoshortcode166s0hbhb"&gt;
 
 
 
@@ -22080,7 +22057,7 @@ Nous visitons le village et surtout l’abbaye et sa partie troglodyte.&lt;/p&gt
  &lt;/a&gt;
  &lt;/div&gt;
  
-&lt;/div&gt;</description></item><item><title>Vaison La Romaine le 4 octobre</title><link>https://github-mc1258.github.io/voyages/2025/20.vaison-la-romaine-le-4-octobre/</link><pubDate>Sun, 05 Oct 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/20.vaison-la-romaine-le-4-octobre/</guid><description>&lt;h2 id="hahahugoshortcode199s0hbhb"&gt;
+&lt;/div&gt;</description></item><item><title>Vaison La Romaine le 4 octobre</title><link>https://github-mc1258.github.io/voyages/2025/20.vaison-la-romaine-le-4-octobre/</link><pubDate>Sun, 05 Oct 2025 00:00:00 +0200</pubDate><guid>https://github-mc1258.github.io/voyages/2025/20.vaison-la-romaine-le-4-octobre/</guid><description>&lt;h2 id="hahahugoshortcode178s0hbhb"&gt;
 
 
 
@@ -35378,7 +35355,7 @@ Celui-ci étant terminé, retour en vélo par le même chemin.&lt;/p&gt;</descri
 La côte est magnifique entre Pornic et la Bernerie en Retz.
 Bain dans l’océan à La Bernerie en Retz; la température de l’eau est vivifiante !!.&lt;br&gt;
 Par curiosité, je vais voir l’aire camping-car de la Bernerie : un garage à camping-car sur goudron, une seule prise d’eau.. A éviter.&lt;/p&gt;
-&lt;h2 id="hahahugoshortcode176s0hbhb"&gt;&lt;div class="pswp-gallery row" id="gallery-0"&gt;
+&lt;h2 id="hahahugoshortcode148s0hbhb"&gt;&lt;div class="pswp-gallery row" id="gallery-0"&gt;
  
  
  

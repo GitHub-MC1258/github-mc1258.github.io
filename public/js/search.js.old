@@ -1,23 +1,23 @@
 let fuse;
 
-/**
- * Initialisation de la recherche
- */
-async function initSearch() {
-    console.log("Moteur de recherche : Initialisation lancée...");
+function normalize(str) {
+    if (!str) return "";
+    return str.normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // Supprime les accents
+        .replace(/[‘’'´`]/g, "'")      // Harmonise les apostrophes
+        .toLowerCase()                 // Convertit en minuscules
+        .trim();                       // Nettoie les espaces inutiles
+}
 
+async function initSearch() {
     const searchInput = document.getElementById('search-input-page') || document.getElementById('search-input');
     const container = document.getElementById('search-results');
     const clearBtn = document.getElementById('clear-search');
 
-    if (!searchInput || !container) {
-        console.warn("Composants de recherche non trouvés sur cette page.");
-        return;
-    }
+    if (!searchInput || !container) return;
 
     try {
         const response = await fetch('/index.json');
-        if (!response.ok) throw new Error("Impossible de charger l'index.json");
         const data = await response.json();
 
         const options = {
@@ -26,54 +26,35 @@ async function initSearch() {
                 { name: 'author', weight: 0.6 },
                 { name: 'content', weight: 0.4 }
             ],
-            threshold: 0.3,
+            threshold: 0.2,
             minMatchCharLength: 3,
             includeMatches: true,
-            ignoreLocation: true
+            ignoreLocation: true,
+            getFn: (obj, path) => {
+                const value = Fuse.config.getFn(obj, path);
+                return typeof value === "string" ? normalize(value) : value;
+            }
         };
 
         fuse = new Fuse(data, options);
 
-        // 1. Gestion de la requête via l'URL (ex: ?q=hugo)
-        const urlParams = new URLSearchParams(window.location.search);
-        const queryFromUrl = urlParams.get('q');
-
-        if (queryFromUrl) {
-            searchInput.value = queryFromUrl;
-            if (clearBtn) clearBtn.style.display = 'block';
-            executeSearch(queryFromUrl);
-        }
-
-        // 2. Écouteur unique sur la saisie
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value;
-
-            // On gère la croix seulement si elle existe dans le HTML
-            if (clearBtn) {
-                clearBtn.style.display = query.length > 0 ? 'block' : 'none';
-            }
-
+            if (clearBtn) clearBtn.style.display = query.length > 0 ? 'block' : 'none';
             executeSearch(query);
         });
 
-        // 3. Action du clic sur la croix (si elle existe)
         if (clearBtn) {
             clearBtn.addEventListener('click', () => {
                 searchInput.value = "";
                 clearBtn.style.display = 'none';
-                executeSearch(""); // Vide les résultats
+                executeSearch("");
                 searchInput.focus();
             });
         }
-
-    } catch (err) {
-        console.error("Erreur d'initialisation :", err);
-    }
+    } catch (err) { console.error("Erreur :", err); }
 }
 
-/**
- * Exécute la recherche et affiche les résultats
- */
 function executeSearch(query) {
     const container = document.getElementById('search-results');
     if (!container || !fuse) return;
@@ -83,34 +64,46 @@ function executeSearch(query) {
         return;
     }
 
-    const results = fuse.search(query);
+    // 1. Recherche avec normalisation de la requête
+    let rawResults = fuse.search(normalize(query));
+
+    // 2. Anti-doublons (On garde l'unicité par permalink)
+    const uniqueResultsMap = new Map();
+    rawResults.forEach(result => {
+        if (!uniqueResultsMap.has(result.item.permalink)) {
+            uniqueResultsMap.set(result.item.permalink, result);
+        }
+    });
+
+    let results = Array.from(uniqueResultsMap.values());
 
     if (results.length === 0) {
-        container.innerHTML = `<p class="mt-4" style="color: var(--primary-gray);">Aucun résultat trouvé pour "<strong>${query}</strong>".</p>`;
+        container.innerHTML = `<p class="mt-4" style="color: var(--primary-gray);">Aucun résultat pour "<strong>${query}</strong>".</p>`;
         return;
     }
 
+    // 3. Affichage (Le tri est celui de Fuse par défaut : le plus pertinent en haut)
     const countText = results.length > 1 ? `${results.length} articles trouvés` : `${results.length} article trouvé`;
-    const countHTML = `<p style="color: var(--primary-gray); font-weight: 600; margin-bottom: 2rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
-                        ${countText}
-                      </p>`;
+    const countHTML = `<p style="color: var(--primary-gray); font-weight: 600; margin-bottom: 2rem; font-size: 0.9rem; text-transform: uppercase;">${countText}</p>`;
 
     const resultsHTML = results.map(result => {
-        let { title, author, content, permalink } = result.item;
+        let { title, author, content, permalink, date } = result.item;
         author = author || "Michel C";
+        const displayDate = date || "Date inconnue";
 
         result.matches.forEach(match => {
             if (match.key === 'title') title = highlight(match.value, match.indices);
             if (match.key === 'author') author = highlight(match.value, match.indices);
-            if (match.key === 'content') {
-                content = highlight(match.value.substring(0, 250), match.indices);
-            }
+            if (match.key === 'content') content = highlight(match.value.substring(0, 250), match.indices);
         });
 
         return `
             <article class="search-result-big">
                 <h3><a href="${permalink}" class="article-title-link">${title}</a></h3>
-                <div class="author">par : <strong>${author}</strong></div>
+                <div class="meta-info">
+                    <span class="date">${displayDate}</span> •
+                    <span class="author">${author}</span>
+                </div>
                 <div class="excerpt">${content}...</div>
             </article>
         `;
@@ -119,19 +112,14 @@ function executeSearch(query) {
     container.innerHTML = countHTML + resultsHTML;
 }
 
-/**
- * Surlignage des termes
- */
 function highlight(text, indices) {
     if (!text) return "";
     let result = "";
     let lastIndex = 0;
     const sortedIndices = [...indices].sort((a, b) => a[0] - b[0]);
-
     for (const [start, end] of sortedIndices) {
         if (start < text.length) {
-            result += text.substring(lastIndex, start) +
-                `<mark>` + text.substring(start, end + 1) + `</mark>`;
+            result += text.substring(lastIndex, start) + `<mark>` + text.substring(start, end + 1) + `</mark>`;
             lastIndex = end + 1;
         }
     }

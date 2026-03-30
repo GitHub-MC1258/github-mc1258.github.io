@@ -1,7 +1,9 @@
 ---
-date: 2026-01-25T10:30:36+01:00
-weight: 40
+
 title: CMS hugo épisode 4
+date: 2026-01-18
+weight: 40
+draft: false
 ---
 
 # Bienvenue sur mon quatrième article avec Hugo.  

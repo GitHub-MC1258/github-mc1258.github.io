@@ -1,23 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Mon p'tit site</title><link>https://github-mc1258.github.io/articles/</link><description>Recent content in Articles on Mon p'tit site</description><generator>Hugo</generator><language>fr-FR</language><lastBuildDate>Wed, 11 Feb 2026 10:29:00 +0100</lastBuildDate><atom:link href="https://github-mc1258.github.io/articles/index.xml" rel="self" type="application/rss+xml"/><item><title>CMS hugo épisode 2</title><link>https://github-mc1258.github.io/articles/art-2/</link><pubDate>Fri, 23 Jan 2026 10:30:36 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-2/</guid><description>&lt;h1 id="bienvenue-sur-mon-deuxième-article-avec-hugo"&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Mon p'tit site</title><link>https://github-mc1258.github.io/articles/</link><description>Recent content in Articles on Mon p'tit site</description><generator>Hugo</generator><language>fr-FR</language><lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://github-mc1258.github.io/articles/index.xml" rel="self" type="application/rss+xml"/><item><title>CMS hugo épisode 1</title><link>https://github-mc1258.github.io/articles/art-1/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-1/</guid><description>&lt;p&gt;Je vais essayer d&amp;rsquo;utiliser le CMS Hugo.&lt;br&gt;
+J&amp;rsquo;installe donc Hugo depuis le dépot Archlinux.&lt;br&gt;
+Jusque là, tout va bien.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 2</title><link>https://github-mc1258.github.io/articles/art-2/</link><pubDate>Mon, 12 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-2/</guid><description>&lt;h1 id="bienvenue-sur-mon-deuxième-article-avec-hugo"&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;J&amp;rsquo;apprends le fonctionnement de Hugo.&lt;br&gt;
-Il faut apprendre l&amp;rsquo;architecture de ce CMS: les divers dossiers contents,layouts etc..&lt;br&gt;
-Je pars d&amp;rsquo;un thème minimal bootstrap.&lt;br&gt;
-Allez, on construit avec l&amp;rsquo;aide de l&amp;rsquo;IA Gemini&lt;/p&gt;</description></item><item><title>Mon premier article</title><link>https://github-mc1258.github.io/articles/art-1/</link><pubDate>Thu, 22 Jan 2026 17:25:28 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-1/</guid><description>&lt;p&gt;
-
-
-
-&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="../articles/art-1/bryce-canyon.jpg" alt="Bryce Canyon" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-Ceci est le contenu&lt;br&gt;
-Ceci est le premier article, dont le weight est 30.&lt;/p&gt;
-&lt;p&gt;Je rajoute Maïa, maïa, Maia_1 pour test de la recherche&lt;br&gt;
-En même temps, je rajoute françoise et garçon.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 5</title><link>https://github-mc1258.github.io/articles/art-5/</link><pubDate>Tue, 27 Jan 2026 15:53:48 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-5/</guid><description>&lt;p&gt;Toujours test avec Hugo; ceci est le post-5, c&amp;rsquo;est un bundle.&lt;/p&gt;
+&lt;p&gt;J&amp;rsquo;apprends le fonctionnement de Hugo.
+Il faut comprendre l&amp;rsquo;architecture de ce CMS: les divers dossiers contents, themes, public, layouts etc..
+Je pars d&amp;rsquo;un thème minimal bootstrap.
+Allez, on construit avec l&amp;rsquo;aide de l&amp;rsquo;IA Gemini&lt;/p&gt;</description></item><item><title>CMS hugo épisode 3</title><link>https://github-mc1258.github.io/articles/art-3/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-3/</guid><description>&lt;h1 id="bienvenue-sur-mon-troisième-article-avec-hugo"&gt;Bienvenue sur mon troisième article avec Hugo.&lt;/h1&gt;
+&lt;p&gt;Jusque là, tout avance à peu prés bien, le squelette se monte petit à petit.&lt;br&gt;
+je me débas avec les scripts.js , les html et autres css.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 4</title><link>https://github-mc1258.github.io/articles/art-4/</link><pubDate>Sun, 18 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-4/</guid><description>&lt;h1 id="bienvenue-sur-mon-quatrième-article-avec-hugo"&gt;Bienvenue sur mon quatrième article avec Hugo.&lt;/h1&gt;
+&lt;p&gt;Je commence à avoir mes premiers articles.&lt;br&gt;
+Je teste les shortcodes pour afficher les &amp;lsquo;gallery&amp;rsquo;, l&amp;rsquo;insertion des photos dans le texte et autre bundle.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 5</title><link>https://github-mc1258.github.io/articles/art-5/</link><pubDate>Tue, 20 Jan 2026 15:53:48 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-5/</guid><description>&lt;p&gt;Toujours test avec Hugo; ceci est le post-5, c&amp;rsquo;est un bundle.&lt;/p&gt;
 &lt;p&gt;je vais donc inserer une image
 
 
@@ -30,45 +22,13 @@ En même temps, je rajoute françoise et garçon.&lt;/p&gt;</description></item>
 
 
 
-avec position en haut a droite de la photo.&lt;/p&gt;</description></item><item><title>Troisième article</title><link>https://github-mc1258.github.io/articles/art-3/</link><pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate><guid>https://github-mc1258.github.io/articles/art-3/</guid><description>&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="../articles/art-3/bryce-canyon.jpg" alt="Bryce Canyon" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis.&lt;br&gt;
-Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;br&gt;
-Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 6</title><link>https://github-mc1258.github.io/articles/art-6/</link><pubDate>Tue, 10 Feb 2026 08:47:15 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-6/</guid><description>&lt;p&gt;Je commence à maitriser Hugo, et donc aussi le logiciel Marker pour éditer les fichiers .md.&lt;br&gt;
+avec position en haut a droite de la photo.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 6</title><link>https://github-mc1258.github.io/articles/art-6/</link><pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-6/</guid><description>&lt;p&gt;Je commence à maitriser Hugo, et donc aussi le logiciel Marker pour éditer les fichiers .md.&lt;br&gt;
 Ceci est un nouveau paragraphe.&lt;br&gt;
-Je vais maintenant uploader sur InfintyFree pour voir le résultat sur mon site.&lt;/p&gt;</description></item><item><title>Post 4</title><link>https://github-mc1258.github.io/articles/art-4/</link><pubDate>Sun, 08 Feb 2026 07:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-4/</guid><description>&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="../articles/art-4/SSD_Sandisk.jpg" alt="un disque SSD" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;Test no 4 avec position en haut a droite de la photo.&lt;br&gt;
-avec Françoise comme auteur&lt;br&gt;
-Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.&lt;br&gt;
-Lorem ipsum dolor sit amet. Est aperiam minima et facere maiores ea magnam temporibus ea officia nulla sit nihil commodi eum fuga distinctio. Aut voluptate dicta eum neque architecto et aliquam corporis et ratione distinctio id similique iure et architecto esse. Ab laboriosam odit et rerum mollitia 33 accusamus inventore ut tenetur illum et explicabo enim.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 7</title><link>https://github-mc1258.github.io/articles/art-7/</link><pubDate>Wed, 11 Feb 2026 10:29:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-7/</guid><description>&lt;p&gt;Je commence à me débrouiller avec les differents dossiers, les build, et les upload. J&amp;rsquo;optimise les differents manipulations par des scripts bash.&lt;br&gt;
-L&amp;rsquo;ensemble commence à fonctionner.&lt;/p&gt;</description></item><item><title>Article-8</title><link>https://github-mc1258.github.io/articles/art-8/</link><pubDate>Wed, 11 Feb 2026 09:40:38 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-8/</guid><description>&lt;p&gt;&lt;strong&gt;Ceci est l&amp;rsquo;article no 8&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis.
-
-
-
-
-&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="../articles/art-8/pano.jpg" alt="entrée de ville" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit.&lt;br&gt;
-Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt.&lt;br&gt;
-Aute ex ipsum id ut in est velit est laborum incididunt.&lt;br&gt;
-&lt;em&gt;Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.&lt;/em&gt;&lt;br&gt;
-&lt;u&gt;Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/u&gt;&lt;/p&gt;</description></item><item><title>Test galerie photo-9</title><link>https://github-mc1258.github.io/articles/art-9/</link><pubDate>Sun, 25 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-9/</guid><description>&lt;div class="pswp-gallery row" id="gallery-0"&gt;
+Je vais maintenant uploader sur InfintyFree pour voir le résultat sur mon site.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 7</title><link>https://github-mc1258.github.io/articles/art-7/</link><pubDate>Thu, 12 Feb 2026 10:29:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-7/</guid><description>&lt;p&gt;Je commence à me débrouiller avec les differents dossiers, les build, et les upload. J&amp;rsquo;optimise les differents manipulations par des scripts bash.&lt;br&gt;
+L&amp;rsquo;ensemble commence à fonctionner.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 8</title><link>https://github-mc1258.github.io/articles/art-8/</link><pubDate>Sat, 14 Feb 2026 09:40:38 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-8/</guid><description>&lt;p&gt;Voici l'épisode 8 de mon apprentissage avec Hugo.&lt;/p&gt;
+&lt;p&gt;J&amp;rsquo;avance sur les differents fonctions de Hugo et les optimisations de l&amp;rsquo;upload via lftp.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 9</title><link>https://github-mc1258.github.io/articles/art-9/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-9/</guid><description>&lt;p&gt;Je teste maintenant un 'bundle-gallery'.&lt;br&gt;
+cela fonctionne comme attendu.&lt;br&gt;
+&lt;div class="pswp-gallery row" id="gallery-0"&gt;
  
  
  
@@ -102,6 +62,25 @@ Aute ex ipsum id ut in est velit est laborum incididunt.&lt;br&gt;
  
 
  &lt;div class="col-6 col-md-4 mb-4"&gt; 
+ &lt;a href="../articles/art-9/avatar_ours.png"
+ data-pswp-width="352"
+ data-pswp-height="528"
+ data-caption="" 
+ target="_blank"
+ class="text-decoration-none"&gt; 
+
+ &lt;img src="../articles/art-9/avatar_ours_hu_4ba254a340466a88.png"
+ alt="avatar_ours.png"
+ class="img-fluid rounded shadow-sm" /&gt; 
+
+ 
+ &lt;/a&gt;
+ &lt;/div&gt;
+ 
+ 
+ 
+
+ &lt;div class="col-6 col-md-4 mb-4"&gt; 
  &lt;a href="../articles/art-9/photo_1.jpg"
  data-pswp-width="510"
  data-pswp-height="287"
@@ -122,8 +101,6 @@ Aute ex ipsum id ut in est velit est laborum incididunt.&lt;br&gt;
  &lt;/div&gt;
  
 &lt;/div&gt;
-
+&lt;/p&gt;
 &lt;p&gt;Voici une galerie photo avec &lt;em&gt;PhotoSwipe&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;
-&lt;p&gt;On souligne : &lt;u&gt;le weight est 60.&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;et maintenant le texte en gras !&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;</description></item></channel></rss>

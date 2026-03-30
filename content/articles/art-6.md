@@ -1,6 +1,6 @@
 ---
 title: CMS hugo épisode 6
-date: 2026-02-10 08:47:15
+date: 2026-02-10
 draft: false
 weight: 60
 ---

@@ -2,7 +2,13 @@
   <section class="container mt-4" data-pagefind-ignore>
     <h1 class="display-5 fw-bold mb-4">{{ .Title }}</h1>
 
-    {{ $p := .Paginate .Pages }}
+   {{/* Tri des pages par Date croissant */}}
+    {{/* Tri des pages par Weigth croissant - asc ou desc */}}
+    {{ $sorted := sort .Pages "Date" }}
+
+    {{/* Pagination sur la liste triée */}}
+    {{ $p := .Paginate $sorted }}
+
 
     <div class="list-group list-group-flush">
       {{ range $p.Pages }}
@@ -27,7 +33,7 @@
             </div>
 
             <div class="article-summary mt-2" style="color: var(--primary-gray); font-size: 0.95rem; line-height: 1.6;">
-                {{ .Plain | truncate 200 "..." }}
+                {{ .Plain | htmlUnescape | truncate 200 "..." }}
                 <a href="{{ .RelPermalink }}" class="read-more-btn">Lire plus</a>
             </div>
           </article>

@@ -1,7 +1,8 @@
 ---
 title: CMS hugo épisode 3
-date: 2026-01-24T10:30:36+01:00
+date: 2026-01-15
 weight: 30
+draft: false
 ---
 
 # Bienvenue sur mon troisième article avec Hugo.  
