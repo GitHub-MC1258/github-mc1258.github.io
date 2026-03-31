@@ -1,12 +1,244 @@
-<!doctype html><html lang=fr><head><head><meta charset=utf-8><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Pragma content="no-cache"><meta http-equiv=Expires content="0"><meta name=viewport content="width=device-width,initial-scale=1"><title>Parcours du 10/12/2025 | Mon p'tit site</title><link rel=icon href=../../favicon.png type=image/x-icon><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css rel=stylesheet><link rel=stylesheet href=https://unpkg.com/photoswipe@5/dist/photoswipe.css><link rel=stylesheet href=../../css/main.min.6b7bfc2ef5b40a31f49ed0d630864acafd416944c18d95dcb17e4240a6677987.css integrity="sha256-a3v8LvW0CjH0ntDWMIZKyv1BaUTBjZXcsX5CQKZneYc="></head></head><body class="container py-4"><header class=site-header><nav class="navbar navbar-expand-lg mb-5"><div class="container-fluid p-0"><a class=navbar-brand href=../../>Mon p'tit site</a>
-<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarNav>
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarNav><ul class="navbar-nav ms-auto"><li class=nav-item><a href=../../ class=nav-link>Accueil</a></li><li class=nav-item><a href=../../articles/ class=nav-link>Articles</a></li><li class=nav-item><a href=../../voyages/ class=nav-link>Voyages</a></li><li class=nav-item><a href=../../activites/ class=nav-link>Activités</a></li><li class=nav-item><a href=../../search/ class=nav-link>Recherche</a></li></ul></div></div></nav></header><main><article class="container py-5"><header class=mb-4><h1 class="display-4 fw-bold">Parcours du 10/12/2025</h1><div class=text-muted><i class="bi bi-calendar"></i> Publié le 10/12/2025
-• <i class="bi bi-person"></i> <strong>Michel C</strong></div></header><hr class=my-4><div class="content mb-5"><p>Parcours du 10/12/2025 exporté depuis Oruxmaps.</p><link rel=stylesheet href=https://unpkg.com/leaflet/dist/leaflet.css><script src=https://unpkg.com/leaflet/dist/leaflet.js></script><script src=https://cdn.jsdelivr.net/npm/gpxparser/dist/GPXParser.min.js></script><div class=activite-container style="border:1px solid #ddd;border-radius:8px;overflow:hidden;font-family:sans-serif;margin:20px 0"><div id=map-20251210.gpx style=height:350px;width:100%></div><div style=padding:15px;background:#f9f9f9;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;text-align:center><div><small>Distance</small><br><strong id=dist-20251210.gpx>-</strong> km</div><div><small>Temps</small><br><strong id=time-20251210.gpx>-</strong></div><div><small>Dénivelé (+/-)</small><br><strong><span id=elev-p-20251210.gpx>-</span> / <span id=elev-m-20251210.gpx>-</span></strong> m</div><div><small>Vitesse (Moy/Max)</small><br><strong><span id=speed-av-20251210.gpx>-</span> / <span id=speed-mx-20251210.gpx>-</span></strong> km/h</div><div><small>FC Moy</small><br><strong id=hr-20251210.gpx>-</strong> bpm</div><div><small>Cadence Moy</small><br><strong id=cad-20251210.gpx>-</strong> rpm</div></div></div><script>(function(){const t="/gpx/20251210.gpx",e="20251210.gpx";fetch(t).then(e=>e.text()).then(t=>{let s=new gpxParser;if(s.parse(t),!s.tracks||s.tracks.length===0)return;let n=s.tracks[0],o=n.points;var a,i=L.map("map-"+e);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(i),a=o.map(e=>[e.lat,e.lon]),L.polyline(a,{color:"#e74c3c",weight:3}).addTo(i),i.fitBounds(L.polyline(a).getBounds()),document.getElementById("dist-"+e).innerText=(n.distance.total/1e3).toFixed(2),document.getElementById("elev-p-"+e).innerText=Math.round(n.elevation.pos||0),document.getElementById("elev-m-"+e).innerText=Math.round(n.elevation.neg||0);let u=new Date(o[0].time),h=new Date(o[o.length-1].time),r=Math.floor((h-u)/1e3);document.getElementById("time-"+e).innerText=Math.floor(r/3600)+"h "+Math.floor(r%3600/60)+"m";let m=n.distance.total/1e3/(r/3600);document.getElementById("speed-av-"+e).innerText=m.toFixed(1);const c=[...t.matchAll(/<gpxtpx:hr>(\d+)<\/gpxtpx:hr>/g)].map(e=>parseInt(e[1])),l=[...t.matchAll(/<gpxtpx:cad>(\d+)<\/gpxtpx:cad>/g)].map(e=>parseInt(e[1])),d=[...t.matchAll(/<gpxtpx:speed>([\d.]+)<\/gpxtpx:speed>/g)].map(e=>parseFloat(e[1]));if(c.length>0){const t=c.reduce((e,t)=>e+t)/c.length;document.getElementById("hr-"+e).innerText=Math.round(t)}if(l.length>0){const t=l.reduce((e,t)=>e+t)/l.length;document.getElementById("cad-"+e).innerText=Math.round(t)}if(d.length>0){const t=Math.max(...d);document.getElementById("speed-mx-"+e).innerText=(t*3.6).toFixed(1)}else n.stats.maxSpeed&&(document.getElementById("speed-mx-"+e).innerText=(n.stats.maxSpeed*3.6).toFixed(1))}).catch(e=>console.error("Erreur:",e))})()</script></div><hr><nav class="navigation-footer d-flex justify-content-between align-items-center my-4"><div class=prev-article><a href=../../activites/20260224/ class="btn btn-sm btn-outline-secondary">&larr; Parcours du 24/02/2026</a></div><div class=home-button><a href=../../activites/ class="btn btn-primary">Voir tout Activites</a></div><div class=next-article><a href=../../activites/20251209/ class="btn btn-sm btn-outline-secondary">Parcours du 09/12/2025 &rarr;</a></div></nav></article></main><footer role=contentinfo><div class="container text-center"><div class=row><div class=col-12><p class=footer-credits>Fièrement construit avec
-<a href=https://gohugo.io/ target=_blank rel=noopener class=footer-dark-link>Hugo</a>
-par
-<a href=https://github-mc1258.github.io/ target=_blank rel=noopener class=footer-dark-link>Michel C
-</a>- © 2026 Le p'tit thème à Michel.
-<a href=../../mentions-legales class=footer-dark-link>Mentions légales</a></p></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script type=module>
+<!DOCTYPE html>
+<html lang="fr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=36833&amp;path=livereload" data-no-instant defer></script><head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcours du 10/12/2025 | Mon p&#39;tit site</title>
+
+
+  <link rel="icon" href="../../favicon.png" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+
+  
+  
+  
+    
+    <link rel="stylesheet" href="../../css/main.min.9a8a71d73ad507b8befc5a58eeada090d1de96b781c82323ca7e483d21d58bc7.css" integrity="sha256-mopx1zrVB7i&#43;/FpY7q2gkNHelreByCMjyn5IPSHVi8c=">
+  
+
+  
+  
+  
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="container py-4"><header class="site-header">
+  <nav class="navbar navbar-expand-lg mb-5">
+    <div class="container-fluid p-0">
+      <a class="navbar-brand" href="../../">Mon p&#39;tit site</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          
+            <li class="nav-item">
+              <a href="../../" class="nav-link">Accueil</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="../../articles/" class="nav-link">Articles</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="../../voyages/" class="nav-link">Voyages</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="../../activites/" class="nav-link">Activités</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="../../search/" class="nav-link">Recherche</a>
+            </li>
+          
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+
+
+
+
+<article class="container py-5">
+
+    
+    <header class="mb-4">
+        <h1 class="display-4 fw-bold">Parcours du 10/12/2025</h1>
+        <div class="text-muted">
+            
+                <i class="bi bi-calendar"></i> Publié le 10/12/2025
+            
+            
+                • <i class="bi bi-person"></i> <strong>Michel C</strong>
+            
+        </div>
+    </header>
+
+    <hr class="my-4">
+
+    
+    <div class="content mb-5">
+        <p>Parcours du 10/12/2025 exporté depuis Oruxmaps.</p>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gpxparser/dist/GPXParser.min.js"></script>
+
+<div class="activite-container" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; font-family: sans-serif; margin: 20px 0;">
+    <div id="map-20251210.gpx" style="height: 350px; width: 100%;"></div>
+
+    <div style="padding: 15px; background: #f9f9f9; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; text-align: center;">
+        <div><small>Distance</small><br><strong id="dist-20251210.gpx">-</strong> km</div>
+        <div><small>Temps</small><br><strong id="time-20251210.gpx">-</strong></div>
+        <div><small>Dénivelé (+/-)</small><br><strong><span id="elev-p-20251210.gpx">-</span> / <span id="elev-m-20251210.gpx">-</span></strong> m</div>
+        <div><small>Vitesse (Moy/Max)</small><br><strong><span id="speed-av-20251210.gpx">-</span> / <span id="speed-mx-20251210.gpx">-</span></strong> km/h</div>
+        <div><small>FC Moy</small><br><strong id="hr-20251210.gpx">-</strong> bpm</div>
+        <div><small>Cadence Moy</small><br><strong id="cad-20251210.gpx">-</strong> rpm</div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        const gpxUrl = "/gpx/20251210.gpx";
+        const idSuffix = "20251210.gpx";
+
+        fetch(gpxUrl)
+            .then(response => response.text())
+            .then(xmlRaw => {
+                
+                let gpx = new gpxParser();
+                gpx.parse(xmlRaw);
+
+                if (!gpx.tracks || gpx.tracks.length === 0) return;
+                let track = gpx.tracks[0];
+                let pts = track.points;
+
+                
+                var map = L.map('map-' + idSuffix);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+                var coordinates = pts.map(p => [p.lat, p.lon]);
+                L.polyline(coordinates, {color: '#e74c3c', weight: 3}).addTo(map);
+                map.fitBounds(L.polyline(coordinates).getBounds());
+
+                
+                document.getElementById('dist-' + idSuffix).innerText = (track.distance.total / 1000).toFixed(2);
+                document.getElementById('elev-p-' + idSuffix).innerText = Math.round(track.elevation.pos || 0);
+                document.getElementById('elev-m-' + idSuffix).innerText = Math.round(track.elevation.neg || 0);
+
+                
+                let startTime = new Date(pts[0].time);
+                let endTime = new Date(pts[pts.length - 1].time);
+                let durationSec = Math.floor((endTime - startTime) / 1000);
+                document.getElementById('time-' + idSuffix).innerText = Math.floor(durationSec / 3600) + "h " + Math.floor((durationSec % 3600) / 60) + "m";
+
+                
+                let avgSpeed = (track.distance.total / 1000) / (durationSec / 3600);
+                document.getElementById('speed-av-' + idSuffix).innerText = avgSpeed.toFixed(1);
+
+                
+
+                
+                const hrValues = [...xmlRaw.matchAll(/<gpxtpx:hr>(\d+)<\/gpxtpx:hr>/g)].map(m => parseInt(m[1]));
+                const cadValues = [...xmlRaw.matchAll(/<gpxtpx:cad>(\d+)<\/gpxtpx:cad>/g)].map(m => parseInt(m[1]));
+                const speedValues = [...xmlRaw.matchAll(/<gpxtpx:speed>([\d.]+)<\/gpxtpx:speed>/g)].map(m => parseFloat(m[1]));
+
+                
+                if (hrValues.length > 0) {
+                    const hrAvg = hrValues.reduce((a, b) => a + b) / hrValues.length;
+                    document.getElementById('hr-' + idSuffix).innerText = Math.round(hrAvg);
+                }
+
+                
+                if (cadValues.length > 0) {
+                    const cadAvg = cadValues.reduce((a, b) => a + b) / cadValues.length;
+                    document.getElementById('cad-' + idSuffix).innerText = Math.round(cadAvg);
+                }
+
+                
+                if (speedValues.length > 0) {
+                    const maxSpeedms = Math.max(...speedValues);
+                    document.getElementById('speed-mx-' + idSuffix).innerText = (maxSpeedms * 3.6).toFixed(1);
+                } else if (track.stats.maxSpeed) {
+                    
+                    document.getElementById('speed-mx-' + idSuffix).innerText = (track.stats.maxSpeed * 3.6).toFixed(1);
+                }
+            })
+            .catch(err => console.error("Erreur:", err));
+    })();
+</script>
+
+
+    </div>
+
+    <hr>
+
+    
+    
+    <nav class="navigation-footer d-flex justify-content-between align-items-center my-4">
+
+        <div class="prev-article">
+            
+                <a href="../../activites/20260224/" class="btn btn-sm btn-outline-secondary">
+                    &larr; Parcours du 24/02/2026
+                </a>
+            
+        </div>
+
+        <div class="home-button">
+            
+                
+                <a href="../../activites/" class="btn btn-primary">
+                    Voir tout Activites
+                </a>
+            
+        </div>
+
+        <div class="next-article">
+            
+                <a href="../../activites/20251209/" class="btn btn-sm btn-outline-secondary">
+                    Parcours du 09/12/2025 &rarr;
+                </a>
+            
+        </div>
+
+    </nav>
+    
+
+</article>
+
+</main><footer role="contentinfo">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12">
+        <p class="footer-credits">
+          Fièrement construit avec
+          <a href="https://gohugo.io/" target="_blank" rel="noopener" class="footer-dark-link">Hugo</a>
+          par
+          <a href="https://github-mc1258.github.io/" target="_blank" rel="noopener" class="footer-dark-link">
+            Michel C
+          </a>
+          - © 2026 Le p'tit thème à Michel.
+          <a href="../../mentions-legales" class="footer-dark-link">Mentions légales</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="module">
   import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
   import PhotoSwipe from 'https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js';
 
@@ -51,4 +283,23 @@ par
     });
   });
   lightbox.init();
-</script><a href=../../contact class=floating-contact aria-label=Contact><span>✉</span></a></body></html>
+</script>
+<a href="../../contact" class="floating-contact" aria-label="Contact">
+    <i class="fa-regular fa-envelope"></i>
+</a>
+
+
+    <div id="progress-container" title="Revenir en haut">
+
+  <svg class="progress-circle"
+      width="48" height="48" viewBox="0 0 100 100">
+      <circle class="bg" cx="50" cy="50" r="45" transform="rotate(-90 50 50)"></circle>
+    <circle class="progress" cx="50" cy="50" r="45" transform="rotate(-90 50 50)"></circle>
+
+  </svg>
+    <i class="fa-solid fa-arrow-up-long arrow-top"></i>
+</div>
+<script src="../../js/scroll-progress.min.5b976626087acaf2192bdfef0881e1a82f94c1d29d08c999abd464243a8a7275.js" integrity="sha256-W5dmJgh6yvIZK9/vCIHhqC&#43;UwdKdCMmZq9RkJDqKcnU=" defer></script>
+
+</body>
+</html>

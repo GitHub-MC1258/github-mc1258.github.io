@@ -340,15 +340,7 @@ mark {
     opacity: 1;
     transform: translateX(0);
 }
-/* Ajustement spécifique pour le caractère enveloppe */
-.floating-contact span {
-    font-size: 1.8rem; /* Taille de l'icône */
-    line-height: 1;  /* Force la hauteur de ligne à 1 pour le centrage */
-    display: block;    /* Permet le centrage précis */
-    /* Parfois un léger décalage optique est nécessaire selon la police */
-    margin-top: 6px;
-    margin-left: -2px;
-}
+
 /* ==========================================================================
    9. ICONES NAVIGATION ACCUEIL
    ========================================================================== */
@@ -406,23 +398,25 @@ mark {
    ========================================================================== */
 #progress-container {
     position: fixed;
-    bottom: 85px; /* Placé au-dessus de votre .floating-contact (24px + 48px + marge) */
+    bottom: 85px;
     right: 24px;
     width: 48px;
     height: 48px;
     cursor: pointer;
-    display: none;
+    display: flex;          /* ← on garde celui-ci */
     align-items: center;
     justify-content: center;
     z-index: 1000;
     transition: var(--transition);
 }
+}
+
 
 .progress-circle {
     transform: rotate(-90deg);
+    transform-origin: 50% 50%;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
-
 .progress-circle circle {
     fill: #ffffff; /* Fond blanc pour ressortir sur le contenu */
     stroke-width: 8;
@@ -441,15 +435,20 @@ mark {
 
 .arrow-top {
     position: absolute;
-    font-size: 1.2rem;
+    top: 50%;                /* ← centre verticalement */
+    left: 50%;               /* ← centre horizontalement */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 2.0rem;
     color: var(--dark-gray);
     transition: var(--transition);
     user-select: none;
 }
 
+
 #progress-container:hover .arrow-top {
     color: var(--signature-violet);
-    transform: translateY(-2px);
+    transform: translate(-50%, -50%) translateY(-2px);
 }
 
 #progress-container:hover .progress-circle .bg {
@@ -459,7 +458,7 @@ mark {
 #progress-container.is-complete .arrow-top {
     color: var(--signature-violet);
     /* Optionnel : un léger effet d'accentuation */
-    transform: translateY(-2px) scale(1.1);
+    transform: translate(-50%, -50%) translateY(0px) scale(1.1);
 }
 /* ==========================================================================
    11. Retours du Formulaire Contact
@@ -627,7 +626,8 @@ mark {
     background-color: #fff;
 }
 /*=======================================*/
-/* Style pour l'extrait de texte */
+/* Style pour l'extrait de texte pour articles */
+/*=======================================*/
 .article-summary {
     font-size: 0.95rem;
     line-height: 1.6;

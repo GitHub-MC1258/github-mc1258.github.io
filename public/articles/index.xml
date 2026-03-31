@@ -1,106 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Mon p'tit site</title><link>https://github-mc1258.github.io/articles/</link><description>Recent content in Articles on Mon p'tit site</description><generator>Hugo</generator><language>fr-FR</language><lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://github-mc1258.github.io/articles/index.xml" rel="self" type="application/rss+xml"/><item><title>CMS hugo épisode 1</title><link>https://github-mc1258.github.io/articles/art-1/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-1/</guid><description>&lt;p&gt;Je vais essayer d&amp;rsquo;utiliser le CMS Hugo.&lt;br&gt;
-J&amp;rsquo;installe donc Hugo depuis le dépot Archlinux.&lt;br&gt;
-Jusque là, tout va bien.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 2</title><link>https://github-mc1258.github.io/articles/art-2/</link><pubDate>Mon, 12 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-2/</guid><description>&lt;h1 id="bienvenue-sur-mon-deuxième-article-avec-hugo"&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;J&amp;rsquo;apprends le fonctionnement de Hugo.
-Il faut comprendre l&amp;rsquo;architecture de ce CMS: les divers dossiers contents, themes, public, layouts etc..
-Je pars d&amp;rsquo;un thème minimal bootstrap.
-Allez, on construit avec l&amp;rsquo;aide de l&amp;rsquo;IA Gemini&lt;/p&gt;</description></item><item><title>CMS hugo épisode 3</title><link>https://github-mc1258.github.io/articles/art-3/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-3/</guid><description>&lt;h1 id="bienvenue-sur-mon-troisième-article-avec-hugo"&gt;Bienvenue sur mon troisième article avec Hugo.&lt;/h1&gt;
-&lt;p&gt;Jusque là, tout avance à peu prés bien, le squelette se monte petit à petit.&lt;br&gt;
-je me débas avec les scripts.js , les html et autres css.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 4</title><link>https://github-mc1258.github.io/articles/art-4/</link><pubDate>Sun, 18 Jan 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-4/</guid><description>&lt;h1 id="bienvenue-sur-mon-quatrième-article-avec-hugo"&gt;Bienvenue sur mon quatrième article avec Hugo.&lt;/h1&gt;
-&lt;p&gt;Je commence à avoir mes premiers articles.&lt;br&gt;
-Je teste les shortcodes pour afficher les &amp;lsquo;gallery&amp;rsquo;, l&amp;rsquo;insertion des photos dans le texte et autre bundle.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 5</title><link>https://github-mc1258.github.io/articles/art-5/</link><pubDate>Tue, 20 Jan 2026 15:53:48 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-5/</guid><description>&lt;p&gt;Toujours test avec Hugo; ceci est le post-5, c&amp;rsquo;est un bundle.&lt;/p&gt;
-&lt;p&gt;je vais donc inserer une image
-
-
-
-
-&lt;div class="float-start me-3" style="margin-bottom: 0.25rem;"&gt;
- &lt;img src="../articles/art-5/Nice-Matin.jpg" alt="le journal" class="img-fluid" style="max-width:200px;"&gt;
-&lt;/div&gt;
-
-
-
-
-avec position en haut a droite de la photo.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 6</title><link>https://github-mc1258.github.io/articles/art-6/</link><pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-6/</guid><description>&lt;p&gt;Je commence à maitriser Hugo, et donc aussi le logiciel Marker pour éditer les fichiers .md.&lt;br&gt;
-Ceci est un nouveau paragraphe.&lt;br&gt;
-Je vais maintenant uploader sur InfintyFree pour voir le résultat sur mon site.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 7</title><link>https://github-mc1258.github.io/articles/art-7/</link><pubDate>Thu, 12 Feb 2026 10:29:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-7/</guid><description>&lt;p&gt;Je commence à me débrouiller avec les differents dossiers, les build, et les upload. J&amp;rsquo;optimise les differents manipulations par des scripts bash.&lt;br&gt;
-L&amp;rsquo;ensemble commence à fonctionner.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 8</title><link>https://github-mc1258.github.io/articles/art-8/</link><pubDate>Sat, 14 Feb 2026 09:40:38 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-8/</guid><description>&lt;p&gt;Voici l'épisode 8 de mon apprentissage avec Hugo.&lt;/p&gt;
-&lt;p&gt;J&amp;rsquo;avance sur les differents fonctions de Hugo et les optimisations de l&amp;rsquo;upload via lftp.&lt;/p&gt;</description></item><item><title>CMS hugo épisode 9</title><link>https://github-mc1258.github.io/articles/art-9/</link><pubDate>Sun, 22 Feb 2026 00:00:00 +0100</pubDate><guid>https://github-mc1258.github.io/articles/art-9/</guid><description>&lt;p&gt;Je teste maintenant un 'bundle-gallery'.&lt;br&gt;
-cela fonctionne comme attendu.&lt;br&gt;
-&lt;div class="pswp-gallery row" id="gallery-0"&gt;
- 
- 
- 
- 
-
- 
- 
- 
-
- &lt;div class="col-6 col-md-4 mb-4"&gt; 
- &lt;a href="../articles/art-9/Avatar.jpg"
- data-pswp-width="2668"
- data-pswp-height="2668"
- data-caption="Mon Avatar" 
- target="_blank"
- class="text-decoration-none"&gt; 
-
- &lt;img src="../articles/art-9/Avatar_hu_5e7c295a82ae257.jpg"
- alt="Mon Avatar"
- class="img-fluid rounded shadow-sm" /&gt; 
-
- 
- &lt;div class="gallery-caption mt-2 text-center"&gt;
- Mon Avatar
- &lt;/div&gt;
- 
- &lt;/a&gt;
- &lt;/div&gt;
- 
- 
- 
-
- &lt;div class="col-6 col-md-4 mb-4"&gt; 
- &lt;a href="../articles/art-9/avatar_ours.png"
- data-pswp-width="352"
- data-pswp-height="528"
- data-caption="" 
- target="_blank"
- class="text-decoration-none"&gt; 
-
- &lt;img src="../articles/art-9/avatar_ours_hu_4ba254a340466a88.png"
- alt="avatar_ours.png"
- class="img-fluid rounded shadow-sm" /&gt; 
-
- 
- &lt;/a&gt;
- &lt;/div&gt;
- 
- 
- 
-
- &lt;div class="col-6 col-md-4 mb-4"&gt; 
- &lt;a href="../articles/art-9/photo_1.jpg"
- data-pswp-width="510"
- data-pswp-height="287"
- data-caption="Mon beau vélo Rewel" 
- target="_blank"
- class="text-decoration-none"&gt; 
-
- &lt;img src="../articles/art-9/photo_1_hu_ddd1133d56ad7235.jpg"
- alt="Mon beau vélo Rewel"
- class="img-fluid rounded shadow-sm" /&gt; 
-
- 
- &lt;div class="gallery-caption mt-2 text-center"&gt;
- Mon beau vélo Rewel
- &lt;/div&gt;
- 
- &lt;/a&gt;
- &lt;/div&gt;
- 
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;p&gt;Voici une galerie photo avec &lt;em&gt;PhotoSwipe&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Mon p&#39;tit site</title>
+    <link>http://localhost:36833/articles/</link>
+    <description>Recent content in Articles on Mon p&#39;tit site</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:36833/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CMS hugo épisode 1</title>
+      <link>http://localhost:36833/articles/art-1/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-1/</guid>
+      <description>&lt;p&gt;Je vais essayer d&amp;rsquo;utiliser le CMS Hugo.&lt;br&gt;&#xA;J&amp;rsquo;installe donc Hugo depuis le dépot Archlinux.&lt;br&gt;&#xA;Jusque là, tout va bien.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CMS hugo épisode 2</title>
+      <link>http://localhost:36833/articles/art-2/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-2/</guid>
+      <description>&lt;h1 id=&#34;bienvenue-sur-mon-deuxième-article-avec-hugo&#34;&gt;Bienvenue sur mon deuxième article avec Hugo.&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ceci est un test pour vérifier que tout fonctionne.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;apprends le fonctionnement de Hugo.&#xA;Il faut comprendre l&amp;rsquo;architecture de ce CMS: les divers dossiers contents, themes, public, layouts etc..&#xA;Je pars d&amp;rsquo;un thème minimal bootstrap.&#xA;Allez, on construit avec l&amp;rsquo;aide de l&amp;rsquo;IA Gemini&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CMS hugo épisode 3</title>
+      <link>http://localhost:36833/articles/art-3/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-3/</guid>
+      <description>&lt;h1 id=&#34;bienvenue-sur-mon-troisième-article-avec-hugo&#34;&gt;Bienvenue sur mon troisième article avec Hugo.&lt;/h1&gt;&#xA;&lt;p&gt;Jusque là, tout avance à peu prés bien, le squelette se monte petit à petit.&lt;br&gt;&#xA;je me débas avec les scripts.js , les html et autres css.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CMS hugo épisode 4</title>
+      <link>http://localhost:36833/articles/art-4/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-4/</guid>
+      <description>&lt;h1 id=&#34;bienvenue-sur-mon-quatrième-article-avec-hugo&#34;&gt;Bienvenue sur mon quatrième article avec Hugo.&lt;/h1&gt;&#xA;&lt;p&gt;Je commence à avoir mes premiers articles.&lt;br&gt;&#xA;Je teste les shortcodes pour afficher les &amp;lsquo;gallery&amp;rsquo;, l&amp;rsquo;insertion des photos dans le texte et autre bundle.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CMS hugo épisode 5</title>
+      <link>http://localhost:36833/articles/art-5/</link>
+      <pubDate>Tue, 20 Jan 2026 15:53:48 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-5/</guid>
+      <description>&lt;p&gt;Toujours test avec Hugo; ceci est le post-5, c&amp;rsquo;est un bundle.&lt;/p&gt;&#xA;&lt;p&gt;je vais donc inserer une image&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;float-start me-3&#34; style=&#34;margin-bottom: 0.25rem;&#34;&gt;&#xA;  &lt;img src=&#34;../articles/art-5/Nice-Matin.jpg&#34; alt=&#34;le journal&#34; class=&#34;img-fluid&#34; style=&#34;max-width:200px;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;avec position en haut a droite de la photo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CMS hugo épisode 6</title>
+      <link>http://localhost:36833/articles/art-6/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-6/</guid>
+      <description>&lt;p&gt;Je commence à maitriser Hugo, et donc aussi le logiciel Marker pour éditer les fichiers .md.&lt;br&gt;&#xA;Ceci est un nouveau paragraphe.&lt;br&gt;&#xA;Je vais maintenant uploader sur InfintyFree pour voir le résultat sur mon site.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CMS hugo épisode 7</title>
+      <link>http://localhost:36833/articles/art-7/</link>
+      <pubDate>Thu, 12 Feb 2026 10:29:00 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-7/</guid>
+      <description>&lt;p&gt;Je commence à me débrouiller avec les differents dossiers, les build, et les upload. J&amp;rsquo;optimise les differents manipulations par des scripts bash.&lt;br&gt;&#xA;L&amp;rsquo;ensemble commence à fonctionner.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CMS hugo épisode 8</title>
+      <link>http://localhost:36833/articles/art-8/</link>
+      <pubDate>Sat, 14 Feb 2026 09:40:38 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-8/</guid>
+      <description>&lt;p&gt;Voici l&#39;épisode 8 de mon apprentissage avec Hugo.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;avance sur les differents fonctions de Hugo et les optimisations de l&amp;rsquo;upload via lftp.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CMS hugo épisode 9</title>
+      <link>http://localhost:36833/articles/art-9/</link>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:36833/articles/art-9/</guid>
+      <description>&lt;p&gt;Je teste maintenant un &#39;bundle-gallery&#39;.&lt;br&gt;&#xA;cela fonctionne comme attendu.&lt;br&gt;&#xA;&lt;div class=&#34;pswp-gallery row&#34; id=&#34;gallery-0&#34;&gt;&#xA;  &#xA;  &#xA;    &#xA;  &#xA;&#xA;  &#xA;    &#xA;    &#xA;&#xA;    &lt;div class=&#34;col-6 col-md-4 mb-4&#34;&gt; &#xA;      &lt;a href=&#34;../articles/art-9/Avatar.jpg&#34;&#xA;         data-pswp-width=&#34;2668&#34;&#xA;         data-pswp-height=&#34;2668&#34;&#xA;         data-caption=&#34;Mon Avatar&#34; &#xA;         target=&#34;_blank&#34;&#xA;         class=&#34;text-decoration-none&#34;&gt; &#xA;&#xA;         &lt;img src=&#34;../articles/art-9/Avatar_hu_5e7c295a82ae257.jpg&#34;&#xA;              alt=&#34;Mon Avatar&#34;&#xA;              class=&#34;img-fluid rounded shadow-sm&#34; /&gt; &#xA;&#xA;         &#xA;           &lt;div class=&#34;gallery-caption mt-2 text-center&#34;&gt;&#xA;             Mon Avatar&#xA;           &lt;/div&gt;&#xA;         &#xA;      &lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &#xA;    &#xA;    &#xA;&#xA;    &lt;div class=&#34;col-6 col-md-4 mb-4&#34;&gt; &#xA;      &lt;a href=&#34;../articles/art-9/avatar_ours.png&#34;&#xA;         data-pswp-width=&#34;352&#34;&#xA;         data-pswp-height=&#34;528&#34;&#xA;         data-caption=&#34;&#34; &#xA;         target=&#34;_blank&#34;&#xA;         class=&#34;text-decoration-none&#34;&gt; &#xA;&#xA;         &lt;img src=&#34;../articles/art-9/avatar_ours_hu_4ba254a340466a88.png&#34;&#xA;              alt=&#34;avatar_ours.png&#34;&#xA;              class=&#34;img-fluid rounded shadow-sm&#34; /&gt; &#xA;&#xA;         &#xA;      &lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &#xA;    &#xA;    &#xA;&#xA;    &lt;div class=&#34;col-6 col-md-4 mb-4&#34;&gt; &#xA;      &lt;a href=&#34;../articles/art-9/photo_1.jpg&#34;&#xA;         data-pswp-width=&#34;510&#34;&#xA;         data-pswp-height=&#34;287&#34;&#xA;         data-caption=&#34;Mon beau vélo Rewel&#34; &#xA;         target=&#34;_blank&#34;&#xA;         class=&#34;text-decoration-none&#34;&gt; &#xA;&#xA;         &lt;img src=&#34;../articles/art-9/photo_1_hu_ddd1133d56ad7235.jpg&#34;&#xA;              alt=&#34;Mon beau vélo Rewel&#34;&#xA;              class=&#34;img-fluid rounded shadow-sm&#34; /&gt; &#xA;&#xA;         &#xA;           &lt;div class=&#34;gallery-caption mt-2 text-center&#34;&gt;&#xA;             Mon beau vélo Rewel&#xA;           &lt;/div&gt;&#xA;         &#xA;      &lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &#xA;&lt;/div&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Voici une galerie photo avec &lt;em&gt;PhotoSwipe&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Vous pouvez cliquer sur les photos pour lancer la &lt;em&gt;&amp;lsquo;gallery&amp;rsquo;&lt;/em&gt; et l&amp;rsquo;agrandissement des photos avec affichage de la légende.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
