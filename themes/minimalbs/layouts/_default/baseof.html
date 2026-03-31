@@ -13,13 +13,21 @@
 
     {{- partialCached "footer.html" . -}}
 
+    {{/* 1. Affichage conditionnel des éléments flottants (Masqués sur la page contact) */}}
     {{ if ne .Type "contact" }}
         {{- partialCached "floating-contact.html" . }}
+        {{- partialCached "scroll-top.html" . }}
     {{ end }}
 
-    {{- partialCached "scroll-top.html" . }}
+    {{/* 2. Scripts communs à toutes les pages */}}
     {{- $js := resources.Get "js/scroll-progress.js" | minify | fingerprint -}}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
+    {{/* 3. Script spécifique à la page de contact uniquement */}}
+    {{ if eq .Type "contact" }}
+        {{- $contactJs := resources.Get "js/contact.js" | minify | fingerprint -}}
+        <script src="{{ $contactJs.RelPermalink }}" integrity="{{ $contactJs.Data.Integrity }}" defer></script>
+    {{ end }}
 
 </body>
 </html>

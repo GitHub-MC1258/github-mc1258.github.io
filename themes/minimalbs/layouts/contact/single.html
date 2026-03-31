@@ -7,13 +7,12 @@
   <div class="post-content">
     {{ .Content }}
 
-    <div class="contact-form">
+<div class="contact-form">
         <form id="contact-form">
             <div style="display:none;">
                 <label>Ne pas remplir ce champ :</label>
                 <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
             </div>
-
             <input type="text" id="name" placeholder="Nom" required>
             <input type="email" id="email" placeholder="Email" required>
             <textarea id="message" rows="5" placeholder="Votre message" required></textarea>

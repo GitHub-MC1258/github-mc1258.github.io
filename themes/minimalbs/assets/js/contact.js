@@ -1,3 +1,8 @@
+console.log("Chargement du script de contact...");
+
+document.addEventListener('click', function(e) {
+    console.log("Élément cliqué :", e.target);
+});
 const contactForm = document.getElementById('contact-form');
 
 if (contactForm) {
