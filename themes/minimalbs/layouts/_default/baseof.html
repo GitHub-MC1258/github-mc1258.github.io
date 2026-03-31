@@ -12,5 +12,9 @@
 
     {{- partialCached "footer.html" . -}}
 
+    {{ if ne .Type "contact" }}
+        {{- partialCached "floating-contact.html" . }}
+    {{ end }}
+
 </body>
 </html>

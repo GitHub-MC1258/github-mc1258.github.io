@@ -326,7 +326,8 @@ mark {
     color: white;
     padding: 4px 8px;
     font-size: 0.8rem;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
+    border-radius: var(--btn-radius);
 
     opacity: 0;
     transform: translateX(10px);
@@ -338,6 +339,15 @@ mark {
 .floating-contact:hover::after {
     opacity: 1;
     transform: translateX(0);
+}
+/* Ajustement spécifique pour le caractère enveloppe */
+.floating-contact span {
+    font-size: 1.8rem; /* Taille de l'icône */
+    line-height: 1;  /* Force la hauteur de ligne à 1 pour le centrage */
+    display: block;    /* Permet le centrage précis */
+    /* Parfois un léger décalage optique est nécessaire selon la police */
+    margin-top: 6px;
+    margin-left: -2px;
 }
 /* ==========================================================================
    9. ICONES NAVIGATION ACCUEIL
