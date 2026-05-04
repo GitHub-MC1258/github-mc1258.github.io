@@ -1,0 +1,99 @@
+
+<div class="container mt-4">
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb" style="list-style: none; display: flex; padding: 0; gap: 10px; font-size: 0.9rem;">
+      <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+      <span class="text-muted">/</span>
+      {{ if eq .Title "Voyages" }}
+        <li class="breadcrumb-item active" style="color: var(--signature-violet); font-weight: 600;">Voyages</li>
+      {{ else }}
+        <li class="breadcrumb-item"><a href="/voyages/">Voyages</a></li>
+        <span class="text-muted">/</span>
+        <li class="breadcrumb-item active" style="color: var(--signature-violet); font-weight: 600;">{{ .Title }}</li>
+      {{ end }}
+    </ol>
+  </nav>
+
+  <header>
+    <h1 class="display-5 fw-bold" style="color: var(--dark-gray);">{{ .Title }}</h1>
+    {{ if .Content }}
+      <div class="lead" style="color: var(--primary-gray);">{{ .Content }}</div>
+    {{ end }}
+  </header>
+
+  <div class="list-group list-group-flush">
+    {{/* On récupère les dossiers d'années (Sections) */}}
+    {{ $items := .Sections.ByDate.Reverse }}
+    {{ $paginator := .Paginate $items }}
+
+    {{ range $paginator.Pages }}
+    <article style="border-bottom: 1px solid var(--border-color); margin-bottom: 2rem; padding-bottom: 1.5rem;">
+      <div class="row align-items-start g-0" style="display: flex; gap: 20px;">
+
+        <div class="col-year-img" style="flex: 0 0 150px;">
+          {{/* On vérifie si l'image existe dans le dossier de l'année */}}
+          {{ $image := .Resources.GetMatch "featured*" }}
+
+          <a href="{{ .RelPermalink }}" class="icon-link" style="display: block; width: 150px; text-decoration: none !important;">
+            {{ if $image }}
+              {{ $scaled := $image.Fit "140x150 webp" }}
+              <img src="{{ $scaled.RelPermalink }}"
+                   alt="{{ .Title }}"
+                   style="width: 140px; height: 150px; border-radius: var(--btn-radius); border: none; object-fit: cover; display: block;">
+            {{ else }}
+              <div style="width: 140px; height: 150px; border-radius: var(--btn-radius); border: 2px solid var(--border-color); background: var(--light-gray); display: flex; align-items: center; justify-content: center; color: var(--primary-gray); font-size: 0.8rem;">
+                Pas de photo
+              </div>
+            {{ end }}
+          </a>
+        </div>
+
+        <div class="col-year-content" style="flex: 1;">
+          <h2 style="margin: 0; font-size: 1.4rem;">
+            <a href="{{ .RelPermalink }}" class="article-title-link">
+              {{ .Title }}
+            </a>
+          </h2>
+
+          <div class="text-muted small" style="margin-top: 5px;">
+            <time datetime="{{ .Date }}">{{ .Date.Format "2006" }}</time>
+          </div>
+
+          {{ if .Description }}
+            <p style="margin-top: 10px; color: #444; font-size: 0.95rem; margin-bottom: 10px;">
+              {{ .Description | truncate 180 }}
+            </p>
+          {{ end }}
+
+          <!--<div style="margin-top: 10px;">
+             <a href="{{ .RelPermalink }}" class="btn" style="padding: 5px 15px; font-size: 0.85rem;">Voir les voyages</a>
+          </div> -->
+        </div>
+
+      </div>
+    </article>
+    {{ end }}
+  </div>
+
+  {{ if gt $paginator.TotalPages 1 }}
+  <nav class="navigation-footer" style="display: flex; justify-content: center; gap: 10px; margin-top: 2rem;">
+      {{ if $paginator.HasPrev }}
+        <a class="page-link" href="{{ $paginator.Prev.URL }}">←</a>
+      {{ end }}
+
+      {{ range $paginator.Pagers }}
+        <a class="page-link {{ if eq .PageNumber $paginator.PageNumber }}active{{ end }}" href="{{ .URL }}">
+          {{ .PageNumber }}
+        </a>
+      {{ end }}
+
+      {{ if $paginator.HasNext }}
+        <a class="page-link" href="{{ $paginator.Next.URL }}">→</a>
+      {{ end }}
+  </nav>
+  {{ end }}
+
+</div>
+
+

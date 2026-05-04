@@ -1,0 +1,11 @@
+# Ne pas suivre le dossier de sortie (le site généré)
+/public
+/resources
+
+# Ne pas suivre le cache de Hugo
+/assets/jsconfig.json
+.hugo_build.temp
+
+# Fichiers système inutiles
+.DS_Store
+Thumbs.db

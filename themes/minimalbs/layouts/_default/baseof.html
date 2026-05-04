@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {{- partial "head.html" . -}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="container py-4">
+    {{- partial "header.html" . -}}
+
+    <main>
+        {{- block "main" . }}{{ end -}}
+    </main>
+
+    {{- partialCached "footer.html" . -}}
+
+    {{/* 1. Affichage conditionnel des éléments flottants (Masqués sur la page contact) */}}
+    {{ if ne .Type "contact" }}
+        {{- partialCached "floating-contact.html" . }}
+        {{- partialCached "scroll-top.html" . }}
+    {{ end }}
+
+    {{/* 2. Scripts communs à toutes les pages */}}
+    {{- $js := resources.Get "js/scroll-progress.js" | minify | fingerprint -}}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
+    {{/* 3. Script spécifique à la page de contact uniquement */}}
+    {{ if eq .Type "contact" }}
+        {{- $contactJs := resources.Get "js/contact.js" | minify | fingerprint -}}
+        <script src="{{ $contactJs.RelPermalink }}" integrity="{{ $contactJs.Data.Integrity }}" defer></script>
+    {{ end }}
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container my-5">
+    <h1 class="mb-4">Votre recherche</h1>
+    <div class="search-wrapper-page mb-4">
+        <input type="text"
+               id="search-input-page"
+               placeholder="Rechercher un article, un auteur..."
+               class="form-control form-control-lg"
+               autocomplete="off"
+               autofocus>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div id="search-results" class="mt-4"></div>
+        </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+<script src="/js/search.js"></script>
+{{ end }}

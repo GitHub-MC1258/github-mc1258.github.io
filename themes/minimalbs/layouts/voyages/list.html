@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <div class="container mt-4">
+    {{/* On vérifie le layout défini dans le .md ou le paramètre type_affichage */}}
+    {{ if or (eq .Layout "ParEtapes") (eq .Params.type_affichage "ParEtapes") }}
+        {{ partial "voyages/ParEtapes.html" . }}
+    {{ else }}
+        {{ partial "voyages/ParAn.html" . }}
+    {{ end }}
+  </div>
+{{ end }}

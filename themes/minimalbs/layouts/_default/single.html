@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+{{/* 1. Préparation de la variable auteur */}}
+{{ $author := .Params.author | default .Site.Params.author | default "Inconnu" }}
+
+<article class="container py-5">
+
+    {{/* ---------------------------------------------------------
+         AFFICHAGE RÉEL
+         --------------------------------------------------------- */}}
+    <header class="mb-4">
+        <h1 class="display-4 fw-bold">{{ .Title }}</h1>
+        <div class="text-muted">
+            {{ if not .PublishDate.IsZero }}
+                <i class="bi bi-calendar"></i> Publié le {{ .PublishDate.Format "02/01/2006" }}
+            {{ end }}
+            {{ if $author }}
+                • <i class="bi bi-person"></i> <strong>{{ $author }}</strong>
+            {{ end }}
+        </div>
+    </header>
+
+    <hr class="my-4">
+
+    {{/* ---------------------------------------------------------
+         CONTENU DE L'ARTICLE
+         --------------------------------------------------------- */}}
+    <div class="content mb-5">
+        {{ .Content }}
+    </div>
+
+    <hr>
+
+    {{/* ---------------------------------------------------------
+         NAVIGATION BAS DE PAGE
+         --------------------------------------------------------- */}}
+    {{ if ne .Layout "no-nav" }}
+    <nav class="navigation-footer d-flex justify-content-between align-items-center my-4">
+
+        <div class="prev-article">
+            {{ with .NextInSection }}
+                <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-secondary">
+                    &larr; {{ .Title | truncate 25 }}
+                </a>
+            {{ end }}
+        </div>
+
+        <div class="home-button">
+            {{ with .Parent }}
+                {{/* Le "." est ici le Parent, .RelPermalink pointe vers la section */}}
+                <a href="{{ .RelPermalink }}" class="btn btn-primary">
+                    Voir tout {{ .Title }}
+                </a>
+            {{ end }}
+        </div>
+
+        <div class="next-article">
+            {{ with .PrevInSection }}
+                <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-secondary">
+                    {{ .Title | truncate 25 }} &rarr;
+                </a>
+            {{ end }}
+        </div>
+
+    </nav>
+    {{ end }}
+
+</article>
+
+{{ end }}

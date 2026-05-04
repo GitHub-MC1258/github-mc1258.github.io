@@ -1,0 +1,38 @@
+/* Conteneur de navigation */
+.navigation-footer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+    gap: 10px;
+}
+
+/* Style des boutons : Fond gris clair, texte et bordure gris foncé */
+.nav-article-btn {
+    background-color: #f2f2f2 !important; /* Gris très clair */
+    color: #4a4a4a !important;            /* Texte gris foncé */
+    border: 1px solid #9d9b9d !important;  /* Bordure gris foncé */
+    padding: 10px 20px;
+    border-radius: 8px;                   /* Coins très arrondis (style pilule) */
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* État Hover (survol) et Active (clic) */
+.nav-article-btn:hover,
+.nav-article-btn:active {
+    background-color: #808080 !important; /* Gris moyen/foncé */
+    color: #f2f2f2 !important;            /* Texte repasse en gris clair */
+    border-color: #808080 !important;
+    text-decoration: none;
+}
+
+/* Alignement des blocs parents */
+.prev-article { flex: 1; text-align: left; }
+.home-button  { flex: 1; text-align: center; }
+.next-article { flex: 1; text-align: right; }
