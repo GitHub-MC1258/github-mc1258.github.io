@@ -6,7 +6,7 @@ draft: false
 weight: 120
 image: 'featured-IMG_villeneuve.jpg'
 ---
-{{< img-left src="featured-IMG_villeneuve.jpg" alt="Aire" >}}
+{{< img-left src="featured-img.jpg" alt="Aire" >}}
 ---
 
 Nous quittons Loches pour aller à la Grande Motte.  

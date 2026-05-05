@@ -6,7 +6,7 @@ draft: false
 weight: 150
 image: 'featured-portstlouis.jpg'
 ---
-{{< img-left src="featured-portstlouis.jpg" alt="Aire" >}}
+{{< img-left src="featured-img.jpg" alt="Aire" >}}
 ---
 
 Nous quittons en catastrophe le camping, persuadés qu'il fermait le MARDI 22 alors que la fermeture était le LUNDI 22 !

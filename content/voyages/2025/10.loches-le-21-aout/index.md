@@ -6,7 +6,7 @@ draft: false
 weight: 110
 image: 'featured-IMG_loches.jpg'
 ---
-{{< img-left src="featured-IMG_loches.jpg" alt="Aire" >}}
+{{< img-left src="featured-img.jpg" alt="Aire" >}}
 ---
 
 Nous avions prévu de rester quelques jours au camping de La Roche Posay.  

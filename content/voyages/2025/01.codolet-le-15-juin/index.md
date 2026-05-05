@@ -5,7 +5,7 @@ draft: false
 weight: 10
 image: 'featured-Codolet.jpg'
 ---
-{{< img-left src="featured-Codolet.jpg" alt="Aire" >}}
+{{< img-left src="featured-img.jpg" alt="Aire" >}}
 
 Nous partons en direction de Saint Cyprien-plage et passons la nuit à l'aire Camping-Car Park de Codolet; toute neuve semble-t-il, près d'un petit étang.  
 Nuit tranquille.

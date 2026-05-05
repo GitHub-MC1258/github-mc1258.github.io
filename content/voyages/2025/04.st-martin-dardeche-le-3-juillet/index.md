@@ -6,7 +6,7 @@ draft: false
 weight: 50
 image: 'featured-StMartin.jpg'
 ---
-{{< img-left src="featured-StMartin.jpg" alt="Aire" >}}
+{{< img-left src="featured-img.jpg" alt="Aire" >}}
 
 
 Nous gagnons le camping des Gorges à Saint Martin d'Ardèche pour apprendre que les Goupille sont partis le matin même !

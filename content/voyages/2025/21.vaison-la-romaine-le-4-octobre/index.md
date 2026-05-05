@@ -6,7 +6,7 @@ draft: false
 weight: 180
 image: 'featured-vaison.jpg'
 ---
-{{< img-left src="featured-vaison.jpg" alt="Aire" >}}
+{{< img-left src="featured-img.jpg" alt="Aire" >}}
 ---
 
 Nous rentrons.  

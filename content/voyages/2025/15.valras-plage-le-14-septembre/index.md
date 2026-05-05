@@ -7,7 +7,7 @@ weight: 140
 captions: "captions.yaml"
 image: 'featured-valras.jpg'
 ---
-{{< img-left src="featured-valras.jpg" alt="Aire" >}}
+{{< img-left src="featured-img.jpg" alt="Aire" >}}
 
 
 Nous arrivons à Valras en fin de matinée.   
