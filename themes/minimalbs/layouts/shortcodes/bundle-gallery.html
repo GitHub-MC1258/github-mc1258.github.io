@@ -5,23 +5,27 @@
   {{ end }}
 
   {{ range .Page.Resources.ByType "image" }}
-    {{ $thumbnail := .Fill "400x300" }}
-    {{ $caption := index $captions .Name }}
+    {{ $img := . }}
+    {{/* .Fit respecte l'orientation auto-orientée de l'original */}}
+    {{ $thumbnail := $img.Fit "400x400" }}
+    {{ $caption := index $captions $img.Name }}
 
-    <div class="col-6 col-md-4 mb-4"> {{/* Augmenté mb-3 à mb-4 pour respirer */}}
-      <a href="{{ .RelPermalink }}"
-         data-pswp-width="{{ .Width }}"
-         data-pswp-height="{{ .Height }}"
-         data-caption="{{ $caption | default "" }}" {{/* Vide si pas de légende */}}
+    <div class="col-6 col-md-4 mb-4">
+      <a href="{{ $img.RelPermalink }}"
+         data-pswp-width="{{ $img.Width }}"
+         data-pswp-height="{{ $img.Height }}"
+         data-caption="{{ $caption | default "" }}"
          target="_blank"
-         class="text-decoration-none"> {{/* Empêche le soulignement Bootstrap */}}
+         class="text-decoration-none">
 
          <img src="{{ $thumbnail.RelPermalink }}"
-              alt="{{ $caption | default .Name }}"
-              class="img-fluid rounded shadow-sm" /> {{/* Ajout d'une ombre légère */}}
+              alt="{{ $caption | default $img.Name }}"
+              class="img-fluid rounded shadow-sm"
+              width="{{ $thumbnail.Width }}"
+              height="{{ $thumbnail.Height }}" />
 
          {{ if $caption }}
-           <div class="gallery-caption mt-2 text-center">
+           <div class="gallery-caption mt-2 text-center text-muted small">
              {{ $caption }}
            </div>
          {{ end }}

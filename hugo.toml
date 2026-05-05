@@ -16,6 +16,11 @@ uglyURLs = false
 [pagination]
   pagerSize = 5
 
+[imaging]
+  autoOrient = true
+  quality = 80
+  resampleFilter = "Box"
+
 [params]
   author = "Michel C"
   description = "Mon site personnel"
