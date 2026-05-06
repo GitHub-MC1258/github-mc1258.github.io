@@ -1,0 +1,43 @@
+<div class="pswp-gallery row" id="gallery-{{ .Ordinal }}">
+  {{ $captions := dict }}
+  {{/* On ne cherche le fichier que s'il y a un paramètre défini */}}
+  {{ with .Page.Params.captions }}
+    {{ with $.Page.Resources.GetMatch . }}
+      {{ $captions = . | transform.Unmarshal }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Filtrage spécifique pour éviter de boucler sur des fichiers inutiles */}}
+  {{ $images := .Page.Resources.ByType "image" }}
+
+  {{ range $images }}
+    {{ $img := . }}
+    {{ $caption := index $captions $img.Name | default "" }}
+
+    {{/* OPTIMISATION : Utilisation de ressources persistantes */}}
+    {{ $thumbnail := $img.Fit "400x400 q75" }} {{/* Ajout d'une qualité 75 pour alléger le poids */}}
+
+    <div class="col-6 col-md-4 mb-4">
+      <a href="{{ $img.RelPermalink }}"
+         data-pswp-width="{{ $img.Width }}"
+         data-pswp-height="{{ $img.Height }}"
+         data-caption="{{ $caption }}"
+         target="_blank">
+
+         <img src="{{ $thumbnail.RelPermalink }}"
+              alt="{{ $caption | default $img.Name }}"
+              class="img-fluid rounded shadow-sm"
+              width="{{ $thumbnail.Width }}"
+              height="{{ $thumbnail.Height }}"
+              loading="lazy" {{/* Crucial pour la perf navigateur */}}
+              decoding="async" />
+
+         {{ with $caption }}
+           <div class="gallery-caption mt-2 text-center text-muted small">
+             {{ . }}
+           </div>
+         {{ end }}
+      </a>
+    </div>
+  {{ end }}
+</div>

@@ -1,19 +1,21 @@
-{{- $.Scratch.Add "index" slice -}}
-{{- /* On filtre ici pour exclure les pages où searchable est explicitement false */ -}}
+{{- $index := slice -}}
 {{- range (where .Site.RegularPages "Params.searchable" "ne" false) -}}
-  {{- if ne .Layout "search" -}}
+    {{- if ne .Layout "search" -}}
         {{- $rawDate := .PublishDate | default .Date -}}
         {{- $formattedDate := "Date inconnue" -}}
-            {{- if $rawDate -}}
-            {{- $formattedDate = $rawDate.Format "02/01/2006" -}}
-        {{- end -}}
+        {{- with $rawDate -}}{{- $formattedDate = .Format "02/01/2006" -}}{{- end -}}
 
-    {{- $.Scratch.Add "index" (dict
-     "title" .Title
-     "author" ( .Params.author | default .Site.Params.author )
-     "date" $formattedDate
-     "content" (.Plain | htmlUnescape | plainify)
-     "permalink" .Permalink) -}}
+        {{- /* On garde .Plain pour la recherche exhaustive, mais on évite le double nettoyage */ -}}
+        {{- $cleanContent := .Plain | htmlUnescape -}}
+
+        {{- $entry := dict
+            "title" .Title
+            "author" (.Params.author | default $.Site.Params.author)
+            "date" $formattedDate
+            "content" $cleanContent
+            "permalink" .Permalink
+        -}}
+        {{- $index = $index | append $entry -}}
     {{- end -}}
-  {{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+{{- end -}}
+{{- $index | jsonify -}}
