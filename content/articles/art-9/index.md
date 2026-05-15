@@ -1,7 +1,7 @@
 ---
 title: "CMS hugo épisode 9"
 date: 2026-02-22
-weight: 110
+weight: 105
 draft: false
 resources:
   - src: "*"
