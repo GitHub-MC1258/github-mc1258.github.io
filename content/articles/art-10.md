@@ -1,5 +1,5 @@
 ---
-title: CMS hugo épisode 8
+title: CMS hugo épisode 10
 date: 2026-05-15 10:29:00
 draft: false
 weight: 80
