@@ -1,4 +1,4 @@
-baseURL = "https://6te4mc.go.zd.fr/"
+baseURL = "https://github-mc1258.github.io/"
 locale = "fr-FR"
 title = "Mon p'tit site"
 theme = "minimalbs"
@@ -24,7 +24,7 @@ uglyURLs = false
 [params]
   author = "Michel C"
   description = "Mon site personnel"
-  siteUrl = "https://6te4mc.go.zd.fr/"
+  siteUrl = "https://github-mc1258.github.io/"
   date_format = "2 January 2006" # Format Hugo pour l'affichage
   locale = "fr_FR"
 
