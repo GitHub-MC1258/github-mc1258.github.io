@@ -9,7 +9,7 @@ Le site **github-mc1258.github.io** est édité par :
 **Michel** Contact : via le formulaire
 
 ### Hébergement
-Le site est hébergé sur :
+Le site est hébergé gratuitement sur :
 ** GitHub pages**
 
 ### Vie privée et Données personnelles
