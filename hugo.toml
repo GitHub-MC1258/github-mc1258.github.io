@@ -55,11 +55,6 @@ uglyURLs = false
     weight = 30
 
 [[menu.main]]
-    name = "Activités"
-    url = "activites/"
-    weight = 40
-
-[[menu.main]]
     name = "Recherche"
     url = "search/"
     weight = 50

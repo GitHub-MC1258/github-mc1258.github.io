@@ -2,7 +2,7 @@
 title: CMS hugo épisode 10
 date: 2026-05-15 10:29:00
 draft: false
-weight: 80
+weight: 110
 ---
 
 Après de multiples essais, je choisis de rester sur Hugo plutôt que Grav et sur Github Pages plutôt que sur un hébergement classique type Planet Hoster ou Byethost.  
