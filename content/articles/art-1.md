@@ -9,4 +9,3 @@ Je vais essayer d'utiliser le CMS Hugo.
 J'installe donc Hugo depuis le dépot Archlinux.  
 Jusque là, tout va bien.  
 les JPG sont reduits et watermarked  
-probleme de deploiement !!!

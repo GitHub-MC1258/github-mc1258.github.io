@@ -17,12 +17,13 @@ require_once __DIR__ . '/phpmailer/src/PHPMailer.php';
 require_once __DIR__ . '/phpmailer/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+// use PHPMailer\PHPMailer\Exception;
 
 // On ne traite que les requêtes POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $mail = new PHPMailer(true);
+    $mail->SMTPDebug = 3;
 
     // Récupération et nettoyage des champs
     $nom     = isset($_POST['name'])      ? trim($_POST['name'])      : '';

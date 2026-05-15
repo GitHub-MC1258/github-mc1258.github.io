@@ -1,0 +1,44 @@
+{{ define "main" }}
+<main class="container contact-form">
+  <div class="text-center mt-5">
+    <h4>Merci de compléter</h4>
+    <h4>le formulaire</h4>
+  </div>
+
+  <form action="https://formspree.io/f/xxxxx" method="POST">
+    <!-- Redirection vers l'URL définie dans votre .md -->
+    <input type="hidden" name="_next" value="{{ "/merci/" | absURL }}">
+
+    <!-- Protection anti-spam standard Formspree -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <div class="mb-3">
+      <label class="form-label">Nom</label>
+      <input type="text" name="name" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Prénom</label>
+      <input type="text" name="firstname" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" name="_replyto" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Message</label>
+      <textarea name="message" class="form-control" rows="5" required></textarea>
+    </div>
+
+    <div class="text-center">
+      <small class="text-muted">Les données envoyées via ce formulaire servent uniquement à répondre à votre message.</small>
+    </div>
+
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </div>
+  </form>
+</main>
+{{ end }}

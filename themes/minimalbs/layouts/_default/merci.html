@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="container text-center mt-5">
+    <div class="py-5" style="max-width: 600px; margin: 0 auto;">
+        <!-- Icône de succès (optionnelle, si vous utilisez Bootstrap Icons ou FontAwesome) -->
+        <h1 class="display-4 text-success">{{ .Title }}</h1>
+        
+        <div class="lead mt-4">
+            {{ .Content }}
+        </div>
+
+        <div class="mt-5">
+            <a href="{{ "/" | relURL }}" class="btn btn-primary">Retour à l'accueil</a>
+        </div>
+    </div>
+</main>
+{{ end }}

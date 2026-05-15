@@ -1,5 +1,5 @@
-baseURL = "https://github-mc1258.github.io/"
-languageCode = "fr-FR"
+baseURL = "https://6te4mc.go.zd.fr/"
+locale = "fr-FR"
 title = "Mon p'tit site"
 theme = "minimalbs"
 timeZone = "Europe/Paris"
@@ -24,7 +24,7 @@ uglyURLs = false
 [params]
   author = "Michel C"
   description = "Mon site personnel"
-  siteUrl = "https://github-mc1258.github.io/"
+  siteUrl = "https://6te4mc.go.zd.fr/"
   date_format = "2 January 2006" # Format Hugo pour l'affichage
   locale = "fr_FR"
 
