@@ -8,5 +8,5 @@ weight: 30
 
 Le temps est plutôt au beau, soleil et un peu de vent comme d'habitude.
 Marché pour l'une, marche à pieds pour l'autre.
-Tour de vélo l'après-midi avec le voisin hollandais d'en face
+Tour de vélo l'après-midi avec le voisin hollandais d'en face et hop, un ami de plus sur Strava.
 
