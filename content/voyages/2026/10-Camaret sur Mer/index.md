@@ -6,4 +6,4 @@ draft: false
 weight: 100
 ---
 
-Camaret sur Mer.
+Etape à Camaret sur Mer.
