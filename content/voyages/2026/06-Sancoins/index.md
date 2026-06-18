@@ -7,5 +7,6 @@ weight: 60
 ---
 
 Nous partons pour visiter la Bretagne.  
-1ére nuit à l'aire de Sancoins, tranquille au bord de l'eau...
+1ére étape à l'aire de Sancoins, tranquille au bord du Canal du Berry  
+
 {{< bundle-gallery >}}
