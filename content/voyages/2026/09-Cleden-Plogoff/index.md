@@ -6,6 +6,6 @@ draft: false
 weight: 90
 ---
 
-Nous allons au camping Keringard, trés trés tranquille, à proximité de Plogoff pour aller voir la pointe du Raz.  
+Nous allons au camping Keringard, trés trés tranquille avec un très grand emplacement, à proximité de Plogoff pour aller voir la pointe du Raz.  
 {{< bundle-gallery >}}
  
