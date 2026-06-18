@@ -7,5 +7,5 @@ weight: 90
 ---
 
 Nous allons au camping Keringard, trés trés tranquille, à proximité de Plogoff pour aller voir la pointe du Raz.  
-
+{{< bundle-gallery >}}
  

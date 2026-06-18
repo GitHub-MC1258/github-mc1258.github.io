@@ -10,4 +10,4 @@ Nous arrivons enfin à Concarneau au camping Les Sables Blancs.
 Beau camping avec une petite piscine en gradins.  
 Marché et piscine pour l'une, marche et vélo pour l'autre.  
 Visite de la Ville Close le 16.  
-
+{{< bundle-gallery >}}

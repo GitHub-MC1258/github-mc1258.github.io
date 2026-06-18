@@ -6,5 +6,6 @@ draft: false
 weight: 60
 ---
 
-Nous partons pour visiter la bretagne.  
+Nous partons pour visiter la Bretagne.  
 1ére nuit à l'aire de Sancoins, tranquille au bord de l'eau...
+{{< bundle-gallery >}}
