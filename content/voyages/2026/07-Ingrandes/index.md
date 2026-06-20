@@ -1,6 +1,6 @@
 ---
-title: Ingrandes le 16 juin
-date: 2026-06-16
+title: Ingrandes le 13 juin
+date: 2026-06-13
 publishDate: 2026-06-17
 draft: false
 weight: 70
