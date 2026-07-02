@@ -6,7 +6,7 @@ draft: false
 weight: 170
 ---
 
-En allant chercher la recharge mensuelle de médicament à Trégastel, nous parcourons le sentier sur la presqu'île Renote.  
+Depuis Ploumanac'h, en allant chercher la recharge mensuelle de médicaments à Trégastel, nous parcourons le sentier sur la presqu'île Renote.  
 Encore de beaux cailloux !  
 
 {{< bundle-gallery >}}
