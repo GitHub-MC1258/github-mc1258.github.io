@@ -6,7 +6,7 @@ draft: false
 weight: 240
 ---
 Visite de Dinard le matin.  
-Jolies Villas.  
+Jolies Villas.et jolis parcours sur la côte avec vue sur Saint Malo.  
 
 
 {{< bundle-gallery >}}
