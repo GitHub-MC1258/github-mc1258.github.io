@@ -7,7 +7,7 @@ weight: 270
 ---
 Nous retrouvons Christine et Alain à Lécousse.  
 Visite du château de Fougères, sous la pluie, et du magnifique Parc Botanique de Haute-Bretagne.  
-Petit tour de vélo et diner avec Mathilde, Pierrick et leurs filles.  
+Le lendemain, petit tour de vélo et diner avec Mathilde, Pierrick et leurs filles.  
 
 
 {{< bundle-gallery >}}
