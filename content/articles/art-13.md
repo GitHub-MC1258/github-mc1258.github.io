@@ -12,4 +12,4 @@ Petite cerise sur le gâteau, positionnement de la fenêtre zenity au centre que
 Le diable est dans les détails  
 Essai avec xdotools.  
 Souci avec l'analyse de la sortie xterm avec le sed.  
-
+le problème persiste !  
