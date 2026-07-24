@@ -16,3 +16,4 @@ le problème persiste !
 problème du sed réglé.  
 une dernière modification pour fermer la fenêtre de sélection du répertoire.  
 décidément, IA copilot remet le problème avec le sed :(  
+toujours le problème avec sed. Je récupére la bonne syntaxe d'une version antérieure.  
