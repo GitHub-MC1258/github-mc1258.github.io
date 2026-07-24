@@ -10,3 +10,5 @@ Phase d'essai et de peaufinage.
 On y est presque !  
 Petite cerise sur le gâteau, positionnement de la fenêtre zenity au centre quelque soit l'écran.  
 Le diable est dans les détails  
+Essai avec xdotools.  
+
