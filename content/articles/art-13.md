@@ -11,4 +11,5 @@ On y est presque !
 Petite cerise sur le gâteau, positionnement de la fenêtre zenity au centre quelque soit l'écran.  
 Le diable est dans les détails  
 Essai avec xdotools.  
+Souci avec l'analyse de la sortie xterm avec le sed.  
 
