@@ -5,4 +5,5 @@ draft: false
 weight: 140
 ---
 
-Je remplace yad par zenity dansle script hugo_push avec l'IA gemini.
+Je remplace yad par zenity dansle script hugo_push avec l'IA gemini.  
+Phase d'essai et de peaufinage.  
