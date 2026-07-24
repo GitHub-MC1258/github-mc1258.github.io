@@ -13,3 +13,5 @@ Le diable est dans les détails
 Essai avec xdotools.  
 Souci avec l'analyse de la sortie xterm avec le sed.  
 le problème persiste !  
+problème du sed réglé.  
+une dernière modification pour fermer la fenêtre de sélection du répertoire.  
