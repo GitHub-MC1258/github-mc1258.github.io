@@ -15,3 +15,4 @@ Souci avec l'analyse de la sortie xterm avec le sed.
 le problème persiste !  
 problème du sed réglé.  
 une dernière modification pour fermer la fenêtre de sélection du répertoire.  
+décidément, IA copilot remet le problème avec le sed :(  
