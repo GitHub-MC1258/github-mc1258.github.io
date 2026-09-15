@@ -1,5 +1,5 @@
 ---
-title: Foix le 12 septembre
+title: Pau le 12 septembre
 date: 2026-09-12
 publishDate: 2026-09-12
 draft: false
